@@ -127,6 +127,7 @@ export default function RefTable() {
                 textAlign: "center",
               }}
               width={1}
+              className="affTable"
             >
               Refree
             </TableCell>
@@ -136,6 +137,7 @@ export default function RefTable() {
                 textAlign: "center",
               }}
               width={1}
+              className="affTable"
             >
               Stage
             </TableCell>
@@ -145,6 +147,7 @@ export default function RefTable() {
                 textAlign: "center",
               }}
               width={1}
+              className="affTable"
             >
               Account Size
             </TableCell>
@@ -154,6 +157,7 @@ export default function RefTable() {
                 textAlign: "center",
               }}
               width={1}
+              className="affTable"
             >
               Status
             </TableCell>
@@ -175,6 +179,7 @@ export default function RefTable() {
                 }}
                 component="th"
                 scope="row"
+                className="affTable"
               >
                 {row.person_referred.email}
               </TableCell>
@@ -184,6 +189,7 @@ export default function RefTable() {
                   textAlign: "center",
                 }}
                 width={1}
+                className="affTable"
               >
                 {row.stage}
               </TableCell>
@@ -193,6 +199,7 @@ export default function RefTable() {
                   textAlign: "center",
                 }}
                 width={1}
+                className="affTable"
               >
                 {row.accsize}
               </TableCell>
@@ -202,6 +209,7 @@ export default function RefTable() {
                   textAlign: "center",
                 }}
                 width={1}
+                className="affTable"
               >
                 {row.status}
               </TableCell>

@@ -32,19 +32,13 @@ function PayoutLink() {
       });
   }, []);
   return (
-    <div className="PayoutSection">
+    <div className="PayoutSection2">
       <Button
         disabled={disable}
         onClick={handleClick}
         variant="outlined"
+        className="Payoutbtn"
         sx={{
-          width: "25%",
-          border: "none",
-          height: "48px",
-          marginLeft: "5%",
-          backgroundColor: "#359602",
-          color: "white",
-          textTransform: "none",
           "&:hover": {
             backgroundColor: "#359602",
           },

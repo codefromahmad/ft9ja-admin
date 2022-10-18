@@ -3,9 +3,23 @@ import ModalVideo from "react-modal-video";
 import "react-modal-video/scss/modal-video.scss";
 import { Box } from "@mui/material";
 import { PlayArrow } from "@mui/icons-material";
+import axios from "../axios";
 
 function AffiliateHIW() {
   const [isOpen, setOpen] = React.useState(false);
+  const [info, setInfo] = React.useState([]);
+
+  React.useEffect(() => {
+    axios
+      .get(`/gethowitworks/`)
+      .then((res) => {
+        console.log(res.data);
+        setInfo(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <Box>
@@ -35,7 +49,7 @@ function AffiliateHIW() {
             // }}
             autoplay="true"
             allow={"autoplay"}
-            videoId="dQw4w9WgXcQ"
+            videoId={info.content}
             onClose={() => setOpen(false)}
             width="100%"
             controls={false}
@@ -46,11 +60,10 @@ function AffiliateHIW() {
             sx={{
               width: "30%",
             }}
-            className="video"
           >
             <img
               onClick={() => setOpen(true)}
-              src="http://i3.ytimg.com/vi/me9ASYfRNak/hqdefault.jpg"
+              src={info.image}
               alt=" "
               style={{ width: "100%" }}
             />

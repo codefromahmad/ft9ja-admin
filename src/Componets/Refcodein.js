@@ -32,6 +32,7 @@ function Refcodein() {
           readOnly: true,
         }}
         value={refcode}
+        className="Refcodefield"
         sx={{
           "& .MuiInputBase-input": {
             // border: "1px solid #ced4da",

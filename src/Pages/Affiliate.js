@@ -6,6 +6,7 @@ import RefTable from "../Componets/RefTable";
 import AffiliateNav from "../Componets/AffiliateNav";
 import AffiliateFoot from "../Componets/AffiliateFoot";
 import { AccProvider } from "../Context/OtherContext";
+
 function Affiliate() {
   return (
     <AccProvider>

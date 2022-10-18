@@ -50,12 +50,11 @@ function PayoutHistory() {
         },
       }}
       className="Carousel"
-      height={473}
     >
       {items.map((item, i) => {
         return (
           <div className="PayoutSection" key={i}>
-            <TableContainer sx={{ maxWidth: 360 }} component={Paper}>
+            <TableContainer sx={{ maxWidth: 360 }}>
               <Table
                 sx={{ maxWidth: 360, width: "calc(0.4rem + 24.5vw)" }}
                 aria-label="simple table"
@@ -154,6 +153,7 @@ function PayoutHistory() {
             </TableContainer>
             <Box style={{ height: "100%", width: "40%" }} className="PayoutBox">
               <Box
+                className="PayoutImg"
                 style={{
                   width: "55%",
                   height: "258px",

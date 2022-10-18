@@ -14,6 +14,7 @@ function MainNav() {
     fontWeight: "494",
     borderRadius: "5px",
     m: 1,
+    minHeight: "0px",
     backgroundColor: "#FEFEFE",
     textTransform: "none",
     color: " rgba(0, 0, 0, 0.8)",

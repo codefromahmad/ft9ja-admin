@@ -34,12 +34,12 @@ function App() {
         NOTE: mobile view is not yet implemented. Please use a desktop
       </Typography>
     );
-  } else if (tab) {
-    return (
-      <Typography variant="h4">
-        NOTE: tab view is not yet implemented. Please use a desktop
-      </Typography>
-    );
+    // } else if (tab) {
+    //   return (
+    //     <Typography variant="h4">
+    //       NOTE: tab view is not yet implemented. Please use a desktop
+    //     </Typography>
+    //   );
   } else {
     return (
       <div className="App">

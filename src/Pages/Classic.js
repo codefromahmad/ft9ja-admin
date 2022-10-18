@@ -251,14 +251,7 @@ function Classic() {
               </Box>
             </Box>
           </Box>
-          <Box
-            sx={{
-              marginLeft: "7%",
-              marginTop: "5%",
-              fontSize: "18px",
-              fontWeight: "494",
-            }}
-          >
+          <Box className="agreement">
             {" "}
             <Checkbox
               sx={{
@@ -285,12 +278,8 @@ function Classic() {
             <Button
               onClick={makeAccount}
               disabled={show}
+              className="agreementbtn"
               sx={{
-                fontSize: "16px",
-                textTransform: "none",
-                width: "21%",
-                height: "57px",
-                background: "#359602",
                 " &:hover": {
                   backgroundColor: "#359602",
                 },

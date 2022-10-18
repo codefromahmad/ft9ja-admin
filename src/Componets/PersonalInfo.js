@@ -52,7 +52,7 @@ function PersonalInfo() {
       <Box
         sx={{
           textAlign: "center",
-          fontSize: "24px",
+          fontSize: "calc(0.9rem + 0.9vw)!important",
           borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
           minHeight: "55px",
           backgroundColor: "white",
@@ -71,6 +71,7 @@ function PersonalInfo() {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
+          fontSize: "calc(0.5rem + 0.5vw) !important",
         }}
         variant="standard"
       >
@@ -94,6 +95,7 @@ function PersonalInfo() {
                 borderRadius: "5px",
                 height: "13px",
                 width: "100%",
+                fontSize: "calc(0.5rem + 0.5vw) !important",
               },
             }}
           />
@@ -116,6 +118,7 @@ function PersonalInfo() {
                 boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
                 borderRadius: "5px",
                 height: "13px",
+                fontSize: "calc(0.5rem + 0.5vw) !important",
               },
             }}
           />
@@ -129,6 +132,7 @@ function PersonalInfo() {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
+          fontSize: "calc(0.5rem + 0.5vw) !important",
         }}
         variant="standard"
       >
@@ -151,6 +155,7 @@ function PersonalInfo() {
                 borderRadius: "5px",
                 height: "13px",
                 width: "100%",
+                fontSize: "calc(0.5rem + 0.5vw) !important",
               },
             }}
           />
@@ -173,6 +178,7 @@ function PersonalInfo() {
                 borderRadius: "5px",
                 height: "13px !important",
                 width: "100%",
+                fontSize: "calc(0.5rem + 0.5vw) !important",
               },
             }}
           >
@@ -195,7 +201,7 @@ function PersonalInfo() {
           onClick={UpdatePersonalInformation}
           variant="contained"
           sx={{
-            width: "10%",
+            width: "20%",
             background: "#359602",
             color: "white",
             height: "45px",
@@ -205,6 +211,7 @@ function PersonalInfo() {
               background: "#359602",
             },
             marginBottom: "5%",
+            fontSize: "calc(0.5rem + 0.5vw) !important",
           }}
           endIcon={
             loading && (

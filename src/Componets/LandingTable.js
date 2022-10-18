@@ -63,18 +63,10 @@ function LandingTable() {
               flexShrink: 0,
             }}
           ></Typography>
-          <Typography
-            variant="h5"
-            sx={{
-              width: "33%",
-              flexShrink: 0,
-              color: "#1B1A1A",
-              fontSize: "140%",
-            }}
-          >
+          <Typography variant="h5" className="accordion__heading">
             FT9ja Classic
           </Typography>
-          <Typography variant="h5" sx={{ color: "#1B1A1A", fontSize: "140%" }}>
+          <Typography variant="h5" className="accordion__heading">
             FT9ja Challenge
           </Typography>
         </MuiAccordionSummary>
@@ -96,7 +88,9 @@ function LandingTable() {
               width: "33%",
               lineHeight: 4.5,
               flexShrink: 0,
+              alignSelf: "center",
             }}
+            // className="accordion__text"
           >
             Evaluation
           </Typography>
@@ -405,7 +399,14 @@ function LandingTable() {
           id="panel10bh-header"
           sx={{ backgroundColor: "#F7FDF8" }}
         >
-          <Typography sx={{ width: "33%", lineHeight: 3, flexShrink: 0 }}>
+          <Typography
+            sx={{
+              width: "33%",
+              lineHeight: 3,
+              flexShrink: 0,
+              alignSelf: "center",
+            }}
+          >
             Minimum Trading days
           </Typography>
           <Typography
@@ -453,13 +454,8 @@ function LandingTable() {
             <Button
               href="/classic"
               variant="contained"
+              className="accordion__btn"
               sx={{
-                background: "#359602",
-                borderRadius: "5px",
-                width: "100%",
-                height: "52px",
-                marginBottom: "7%",
-                fontSize: "calc(0.4em + 0.34vw)",
                 " &:hover": {
                   backgroundColor: "#359602",
                 },
@@ -470,15 +466,10 @@ function LandingTable() {
           </Typography>
           <Typography variant="h5" sx={{ color: "#1B1A1A", fontSize: "140%" }}>
             <Button
+              className="accordion__btn"
               href="/challenge"
               variant="contained"
               sx={{
-                background: "#359602",
-                borderRadius: "5px",
-                width: "100%",
-                height: "52px",
-                marginBottom: "7%",
-                fontSize: "calc(0.4em + 0.34vw)",
                 " &:hover": {
                   backgroundColor: "#359602",
                 },

@@ -33,15 +33,17 @@ body {
 .Tab1 {
   max-width: 103px !important;
   max-height: 41px !important;
+  height: 40px;
   box-shadow: 0px 4px 10px rgba(29, 67, 83, 0.05);
+  font-size: calc(0.7vw + 0.4vh + 0.5vmin) !important;
 }
 
 .Tab2 {
   height: 32px;
   font-weight: bold;
-  min-width: 161px !important ;
+  width: calc(0.9vw + 5.4vh + 26.5vmin) !important;
   font-weight: 494 !important;
-  font-size: 16px !important;
+  font-size: calc(0.7vw + 0.4vh + 0.5vmin) !important;
   line-height: 18px !important;
   color: #000;
   text-transform: capitalize !important;
@@ -68,10 +70,11 @@ body {
   margin-bottom: 10px;
   border-radius: 2px !important;
   font-family: inherit !important;
+  font-size: calc(0.5rem + 0.5vw) !important;
 }
 
 .GetAccbtn {
-  width: 170px;
+  width: calc(3.9vw + 4.4vh + 25.5vmin) !important;
   height: 48px;
   background-color: #1d4353 !important;
   border-radius: 30px !important;
@@ -132,11 +135,11 @@ body {
   align-items: center;
   background-color: #fff;
   margin-left: 1%;
-  width: 18%;
+  width: calc(2.9vw + 11.4vh + 24.5vmin) !important;
   max-width: 180px;
   justify-content: flex-start;
   align-content: center;
-  height: 234px;
+  height: fit-content;
   box-shadow: 0px 0px 4px rgba(10, 28, 0, 0.05);
 }
 .Dashboard {
@@ -146,10 +149,10 @@ body {
 }
 
 .AccText {
-  margin-left: 22px;
+  margin-left: 8%;
   min-height: 33px;
   font-weight: 545;
-  font-size: calc(0.6rem + 0.5vw) !important;
+  font-size: calc(0.6vw + 0.9vh + 0.6vmin) !important;
   line-height: 31px;
 }
 
@@ -163,7 +166,7 @@ body {
   justify-content: center;
   line-height: 23px;
   font-weight: 494;
-  font-size: 16px;
+  font-size: calc(0.6rem + 0.5vw) !important;
   padding-top: 10px;
   border-radius: 5px 5px 0px 0px;
 }
@@ -288,6 +291,22 @@ h4 {
   align-items: center;
   margin-top: 6%;
 }
+.PayoutSection2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  margin-top: 6%;
+}
+.PayoutSection3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  margin-top: 6%;
+}
 .PayoutBoxlink {
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.7);
@@ -311,6 +330,15 @@ h4 {
   font-weight: 375;
   font-size: calc(0.5rem + 0.5vw);
   line-height: calc(2.4rem + 0.5vw);
+}
+.Payoutbtn {
+  width: 25%;
+  border: none;
+  height: 48px;
+  margin-left: 5%;
+  background-color: #359602;
+  color: white;
+  text-transform: none;
 }
 
 .MuiTablePagination-actions {
@@ -359,7 +387,7 @@ h4 {
   width: 168px;
   height: 27px;
   font-weight: 494;
-  font-size: 30px;
+  font-size: calc(0.6rem + 0.6vw + 2.5vh);
   line-height: 33px;
   color: rgba(0, 0, 0, 0.9);
 }
@@ -372,7 +400,7 @@ h4 {
   width: 100%;
   font-style: normal;
   font-weight: 375;
-  font-size: 16px;
+  font-size: calc(0.4rem + 0.4vw + 1.2vh);
   line-height: 149.5%;
   color: rgba(0, 0, 0, 0.9);
 }
@@ -395,7 +423,7 @@ h4 {
   font-family: "Author";
   font-style: normal;
   font-weight: 494;
-  font-size: 25px;
+  font-size: calc(0.7rem + 0.2vw + 2.4vh);
   line-height: 210%;
   text-align: center;
   color: rgba(255, 255, 255, 0.9);
@@ -940,14 +968,14 @@ h4 {
 }
 
 .Landingheader h6 {
-  width: 48%;
+  width: 60%;
   height: 59px;
   left: 296px;
   top: 151px;
   font-family: "Author";
   font-style: normal;
   font-weight: 375;
-  font-size: calc(0.8vw + 1.1vmin);
+  font-size: 100%;
   line-height: 100%;
   text-align: center;
   margin-left: auto;
@@ -966,11 +994,11 @@ h4 {
 }
 
 .classicbtns button {
-  width: 21%;
+  width: 29%;
   height: 46px;
   border-radius: 5px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: calc(0.9vw + 0.5vh + 0.5vmin);
   line-height: 20px;
   font-family: Author;
   text-transform: none;
@@ -986,7 +1014,7 @@ h4 {
   font-style: normal;
   color: #000000;
   font-weight: 494;
-  font-size: 20px;
+  font-size: calc(0.9vw + 0.5vh + 0.5vmin);
   line-height: 22px;
 }
 
@@ -999,19 +1027,42 @@ h4 {
   margin-bottom: 5%;
 }
 .accordion p {
-  font-size: 110%;
+  font-size: calc(0.9vw + 0.9vh + 0.9vmin);
 }
 
-.video div::before {
-  content: "\25B6";
-  position: relative;
-  color: white;
-  left: 150px;
-  top: -170px;
-  z-index: 999;
-  font-size: 40px;
+.accordion__heading {
+  width: 33%;
+  flex-shrink: 0;
+  color: #1b1a1a;
+  font-size: 140% !important;
+}
 
-  text-shadow: 0 3px #666666;
+.accordion__btn {
+  /* color: #359602; */
+  cursor: pointer;
+  background: #359602 !important;
+  border-radius: 5px;
+  width: 100%;
+  height: 52px;
+  margin-bottom: 7%;
+  font-size: calc(0.4em + 0.22vw) !important;
+}
+
+.agreement {
+  margin-left: 7%;
+  margin-top: 5%;
+  font-size: calc(0.9vw + 0.9vh + 0.9vmin);
+  font-weight: 494;
+}
+.agreementbtn {
+  font-size: calc(0.7vw + 0.9vh + 0.9vmin) !important;
+  text-transform: none !important;
+  width: 25%;
+  height: 57px;
+  background: #359602 !important;
+}
+.affTable {
+  font-size: calc(0.7vw + 0.1vh + 1vmin) !important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1026,6 +1077,96 @@ h4 {
   .App {
     margin-left: auto;
     margin-right: auto;
-    background-color: #2e1d9b;
+  }
+  .landbtn {
+    height: 42px;
+    font-size: calc(0.7vw + 0.4vh + 0.5vmin) !important;
+  }
+  .landp {
+    font-size: 89%;
+    width: 65%;
+  }
+  .accordion__heading {
+    font-size: 120% !important;
+  }
+  .accordion p {
+    font-size: 70%;
+  }
+  .accordion__text {
+    line-height: 4.5 !important;
+  }
+  .accordion__btn {
+    font-size: 35% !important;
+    width: 100%;
+    height: 80%;
+  }
+  .classicbtns button {
+    height: auto;
+  }
+  .agreementbtn {
+    width: 35%;
+  }
+  .Tab2 {
+    width: calc(0.9vw + 5.4vh + 22.5vmin) !important;
+  }
+  .DashGraph {
+    flex-wrap: wrap;
+  }
+  .LineGraph2 {
+    width: 90%;
+  }
+  #simple-tabpanel-0 {
+    width: 85%;
+  }
+  #simple-tabpanel-1 {
+    width: 85%;
+  }
+  .Accs {
+    min-height: 32px !important;
+  }
+  .GetAccbtn {
+    width: 137px;
+    height: 35px;
+  }
+  .Payoutbtn {
+    width: calc(0.9vw + 5.4vh + 22.5vmin) !important;
+    font-size: calc(0.5vw + 0.9vh + 0.6vmin) !important;
+  }
+  .PayoutBoxlink {
+    line-height: calc(1.4rem + 0.5vw);
+  }
+  .PayoutSection {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .PayoutBox {
+    border-top: 1px solid rgba(0, 0, 0, 0.7);
+    border-left: none;
+    width: 90% !important;
+    margin-top: 5%;
+  }
+  .PayoutImg {
+    margin-top: inherit !important;
+  }
+  .Carousel {
+    width: 100%;
+    height: 766px;
+  }
+  .RefText {
+    font-size: calc(0.9vw + 0.9vh + 0.9vmin);
+  }
+  .Refcodefield {
+    width: calc(0.9vw + 5.4vh + 22.5vmin) !important;
+  }
+  .affbar {
+    width: 80% !important;
+  }
+  .pipcalctexts h2 {
+    font-size: calc(1vw + 1vh + 2vmin);
+    width: 110% !important;
+  }
+  .deviceheader {
+    font-size: calc(1vw + 1vh + 2vmin);
+    line-height: 270%;
   }
 }

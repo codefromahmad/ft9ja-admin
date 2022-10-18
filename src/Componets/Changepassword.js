@@ -40,7 +40,7 @@ function Changepassword(props) {
       <Box
         sx={{
           textAlign: "center",
-          fontSize: "24px",
+          fontSize: "calc(0.9rem + 0.9vw)!important",
           borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
           minHeight: "55px",
           backgroundColor: "white",
@@ -59,6 +59,7 @@ function Changepassword(props) {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
+          fontSize: "calc(0.5rem + 0.5vw) !important",
         }}
         variant="standard"
       >
@@ -79,6 +80,7 @@ function Changepassword(props) {
                 borderRadius: "5px",
                 height: "13px",
                 width: "100%",
+                fontSize: "calc(0.5rem + 0.5vw) !important",
               },
             }}
             onChange={(e) => setPassword1(e.target.value)}
@@ -99,6 +101,7 @@ function Changepassword(props) {
                 boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
                 borderRadius: "5px",
                 height: "13px",
+                fontSize: "calc(0.5rem + 0.5vw) !important",
               },
             }}
             onChange={(e) => setPassword2(e.target.value)}
@@ -117,13 +120,14 @@ function Changepassword(props) {
           onClick={UpdatePersonalInformation}
           variant="contained"
           sx={{
-            width: "20%",
+            width: "30%",
             background: "#359602",
             color: "white",
             height: "45px",
             borderRadius: "5px",
             alignSelf: "center",
             textTransform: "none",
+            fontSize: "calc(0.5rem + 0.5vw) !important",
             "&:hover": {
               background: "#359602",
             },

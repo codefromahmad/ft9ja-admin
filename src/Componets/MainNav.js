@@ -13,6 +13,7 @@ function MainNav() {
   const desktop = {
     fontWeight: "494",
     borderRadius: "5px",
+    minHeight: "0px",
     m: 1,
     backgroundColor: "#FEFEFE",
     textTransform: "none",

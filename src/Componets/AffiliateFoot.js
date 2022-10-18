@@ -16,7 +16,7 @@ function AffiliateFoot() {
       }}
     >
       <div>
-        <p style={{ width: "259px", fontSize: "calc(0.9vw + 1.1vmin)" }}>
+        <p style={{ width: "100%", fontSize: "calc(0.9vw + 1.1vmin)" }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
         </p>
         <Button
@@ -38,8 +38,8 @@ function AffiliateFoot() {
       <div
         style={{
           background: "#D9D9D9",
-          width: "297px",
-          height: "166px",
+          width: "40%",
+          height: "70%",
         }}
       ></div>
     </div>

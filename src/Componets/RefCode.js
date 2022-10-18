@@ -45,11 +45,12 @@ function RefCode() {
     );
   };
   return (
-    <div className="PayoutSection">
+    <div className="PayoutSection3">
       <div
         style={{
           marginLeft: "10%",
         }}
+        className="RefText"
       >
         <h3>Referral Code</h3>
         <Refcodein />
@@ -68,7 +69,7 @@ function RefCode() {
             marginLeft: "15%",
           }}
         >
-          <ResponsiveContainer width="50%" height={124}>
+          <ResponsiveContainer className={"affbar"} width="50%" height={124}>
             <BarChart
               data={[gdata]}
               margin={{ bottom: 15, top: 15 }}
@@ -102,7 +103,7 @@ function RefCode() {
           <Box>
             <p
               style={{
-                width: "65%",
+                width: "95%",
                 lineHeight: "23px",
                 fontSize: "calc(0.8vw + 1.1vmin)",
               }}

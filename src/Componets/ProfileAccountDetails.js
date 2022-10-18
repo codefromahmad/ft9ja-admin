@@ -20,7 +20,7 @@ function ProfileAccountDetails() {
       <Box
         sx={{
           textAlign: "center",
-          fontSize: "24px",
+          fontSize: "calc(0.9rem + 0.9vw) !important",
           borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
           minHeight: "55px",
           backgroundColor: "white",
@@ -68,6 +68,7 @@ function ProfileAccountDetails() {
                   width: "-webkit-fill-available",
                   padding: "0% 7% 0% 7%",
                   marginTop: "5%",
+                  fontSize: "calc(0.5rem + 0.5vw) !important",
                   // marginLeft: "auto",
                   // marginRight: "auto",
                   // height: "auto",
@@ -91,6 +92,7 @@ function ProfileAccountDetails() {
                       boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
                       borderRadius: "5px",
                       height: "13px",
+                      fontSize: "calc(0.5rem + 0.5vw) !important",
                     },
                   }}
                 />
@@ -110,6 +112,7 @@ function ProfileAccountDetails() {
                       boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
                       borderRadius: "5px",
                       height: "13px",
+                      fontSize: "calc(0.5rem + 0.5vw) !important",
                     },
                   }}
                 />
@@ -129,6 +132,7 @@ function ProfileAccountDetails() {
                       boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
                       borderRadius: "5px",
                       height: "13px",
+                      fontSize: "calc(0.5rem + 0.5vw) !important",
                     },
                   }}
                 />
@@ -148,6 +152,7 @@ function ProfileAccountDetails() {
                       boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
                       borderRadius: "5px",
                       height: "13px",
+                      fontSize: "calc(0.5rem + 0.5vw) !important",
                     },
                   }}
                 />
