@@ -124,7 +124,7 @@ function Changepassword(props) {
             background: "#359602",
             color: "white",
             height: "45px",
-            borderRadius: "5px",
+            borderRadius: "5.1px",
             alignSelf: "center",
             textTransform: "none",
             fontSize: "calc(0.5rem + 0.5vw) !important",
