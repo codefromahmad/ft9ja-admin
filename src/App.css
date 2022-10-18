@@ -41,7 +41,7 @@ body {
 .Tab2 {
   height: 32px;
   font-weight: bold;
-  width: calc(0.9vw + 5.4vh + 26.5vmin) !important;
+  /* width: calc(0.9vw + 5.4vh + 26.5vmin) !important; */
   font-weight: 494 !important;
   font-size: calc(0.7vw + 0.4vh + 0.5vmin) !important;
   line-height: 18px !important;
