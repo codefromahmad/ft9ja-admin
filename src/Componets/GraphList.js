@@ -48,7 +48,7 @@ function GraphList(props) {
                 </Box>
                 <Box
                   sx={{ marginTop: "72px", marginBottom: "72px" }}
-                  className="LineGraph2"
+                  className="LineGraph3"
                 >
                   <FeedLineGraph />
                 </Box>
