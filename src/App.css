@@ -1163,6 +1163,7 @@ h4 {
   .GetAccbtn {
     width: 137px;
     height: 35px;
+    width: calc(3.9vw + 2.8vh + 24.5vmin) !important;
   }
   .Payoutbtn {
     width: calc(0.9vw + 5.4vh + 22.5vmin) !important;
