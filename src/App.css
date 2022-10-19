@@ -74,7 +74,7 @@ body {
 }
 
 .GetAccbtn {
-  width: calc(3.9vw + 4.4vh + 25.5vmin) !important;
+  width: calc(1.9vw + 2.4vh + 21.5vmin) !important;
   height: 48px;
   background-color: #1d4353 !important;
   border-radius: 30px !important;
@@ -135,7 +135,7 @@ body {
   align-items: center;
   background-color: #fff;
   margin-left: 1%;
-  width: calc(2.9vw + 11.4vh + 24.5vmin) !important;
+  width: calc(3.9vw + 6.4vh + 18.5vmin) !important;
   max-width: inherit !important;
   justify-content: flex-start;
   align-content: center;
