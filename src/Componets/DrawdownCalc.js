@@ -45,7 +45,7 @@ function DrawdownCalc() {
     <Box className="pipcalc">
       <Box className="pipcalc__container">
         <Box className="pipcalctexts">
-          <h2 style={{ width: "263px" }}>Drawdown Calculator</h2>
+          <h2>Drawdown Calculator</h2>
           <p>
             This helps you calculate the maximum drawdown value on your account.
             The maximum overall drawdown allowed on all FT9ja accounts is 10% of
@@ -56,7 +56,7 @@ function DrawdownCalc() {
           <br />
           <DrawnDown width="70%" />
         </Box>
-        <Box className="pipcalcdevice" style={{ height: "635px" }}>
+        <Box className="pipcalcdevice">
           <Box className="deviceheader">Drawdown Calculator</Box>
           <Box className="devicebody">
             <FormControl className="calcform" variant="standard">
@@ -74,7 +74,7 @@ function DrawdownCalc() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: 16,
+                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -104,7 +104,7 @@ function DrawdownCalc() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: 16,
+                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -135,7 +135,7 @@ function DrawdownCalc() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: 16,
+                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -170,6 +170,7 @@ function DrawdownCalc() {
                 sx={{
                   width: "100%",
                   background: "#359602",
+                  fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
                   color: "white",
                   height: "45px",
                   borderRadius: "5px",
@@ -197,11 +198,13 @@ function DrawdownCalc() {
                 variant="outlined"
                 sx={{
                   width: "60%",
+                  fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
                   background: "#1D4353",
                   color: "white",
                   height: "45px",
                   borderRadius: "5px",
                   alignSelf: "center",
+                  marginBottom: "15%",
                   "&:hover": {
                     background: "#1D4353",
                   },

@@ -83,7 +83,7 @@ function ProfitSplit() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: 16,
+                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -116,7 +116,7 @@ function ProfitSplit() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: 16,
+                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -142,7 +142,7 @@ function ProfitSplit() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: 16,
+                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -185,7 +185,7 @@ function ProfitSplit() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: 16,
+                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -212,7 +212,7 @@ function ProfitSplit() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: 16,
+                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -250,6 +250,7 @@ function ProfitSplit() {
                   color: "white",
                   height: "45px",
                   borderRadius: "5px",
+                  fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
                   "&:hover": {
                     background: "#359602",
                   },
@@ -279,6 +280,8 @@ function ProfitSplit() {
                   height: "45px",
                   borderRadius: "5px",
                   alignSelf: "center",
+                  marginBottom: "15%",
+                  fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
                   "&:hover": {
                     background: "#1D4353",
                   },

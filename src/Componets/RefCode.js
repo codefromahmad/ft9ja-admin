@@ -30,7 +30,13 @@ function RefCode() {
   const BalanceCustomizedLabel = (props) => {
     const { x, y, width, height } = props;
     return (
-      <text x={x + width / 2} y={y} fill="black" textAnchor="middle">
+      <text
+        x={x + width / 2}
+        y={y}
+        fill="black"
+        textAnchor="middle"
+        // fontSize={"calc(0.9vw + 0.5vh + .1vmin)"}
+      >
         Banked Payout
       </text>
     );
@@ -39,7 +45,13 @@ function RefCode() {
   const DrawdownCustomizedLabel = (props) => {
     const { x, y, width, height } = props;
     return (
-      <text x={x + width / 2} y={y} fill="black" textAnchor="middle">
+      <text
+        x={x + width / 2}
+        y={y}
+        fill="black"
+        textAnchor="middle"
+        // fontSize={"calc(0.9vw + 0.5vh + .1vmin)"}
+      >
         Potential Payout
       </text>
     );
@@ -52,7 +64,13 @@ function RefCode() {
         }}
         className="RefText"
       >
-        <h3>Referral Code</h3>
+        <h3
+          style={{
+            fontSize: "calc(0.9vw + 0.9vh + 0.9vmin)",
+          }}
+        >
+          Referral Code
+        </h3>
         <Refcodein />
       </div>
       <Box

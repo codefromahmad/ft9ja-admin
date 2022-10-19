@@ -31,8 +31,8 @@ function FeedLineGraph() {
 
     return date;
   }
-  let omo = roundToNearestHour(new Date(values[1].date));
-  console.log(omo.toString().split(" ")[4].split(":")[0], "omo");
+  // let omo = roundToNearestHour(new Date(values[1].date));
+  // console.log(omo.toString().split(" ")[4].split(":")[0], "omo");
   return (
     <ResponsiveContainer width={"100%"} height={312}>
       <AreaChart
@@ -60,7 +60,11 @@ function FeedLineGraph() {
           dy={10}
           tickLine={false}
           tick={{ fontSize: 14 }}
-          label={{ value: "Time", offset: -19, position: "insideBottomRight" }}
+          label={{
+            value: "Time(hrs)",
+            offset: -19,
+            position: "insideBottomRight",
+          }}
         />
         <YAxis
           type="number"

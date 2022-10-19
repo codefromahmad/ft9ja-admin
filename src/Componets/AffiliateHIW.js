@@ -26,7 +26,7 @@ function AffiliateHIW() {
       <Box
         sx={{
           textAlign: "center",
-          fontSize: "28px",
+          fontSize: "calc(1.9vw + 0.7vh + .1vmin)",
         }}
       >
         How it Works

@@ -75,6 +75,7 @@ function DailyDD() {
         values={info}
         onClick={handleClick}
         showWeekdayLabels={true}
+        weekdayLabels={["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]}
         classForValue={(value) => {
           if (!value) {
             return "color-empty";

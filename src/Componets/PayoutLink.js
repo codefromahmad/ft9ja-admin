@@ -39,6 +39,7 @@ function PayoutLink() {
         variant="outlined"
         className="Payoutbtn"
         sx={{
+          backgroundColor: "#359602",
           "&:hover": {
             backgroundColor: "#359602",
           },

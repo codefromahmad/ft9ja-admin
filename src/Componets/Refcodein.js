@@ -43,11 +43,12 @@ function Refcodein() {
             boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
             borderRadius: "5px",
             height: "13px",
+            fontSize: "calc(0.6vw + .9vh + .9vmin)",
           },
         }}
       />
       <IconButton onClick={handleClick}>
-        <FileCopy />
+        <FileCopy sx={{ fontSize: "calc(1.1vw + .9vh + .9vmin)" }} />
       </IconButton>
       <Snackbar
         message="Copied to clibboard"

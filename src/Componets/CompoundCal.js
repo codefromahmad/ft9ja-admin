@@ -49,7 +49,7 @@ function CompoundCal() {
           <br />
           <Compound width="70%" />
         </Box>
-        <Box className="pipcalcdevice" style={{ height: "700px" }}>
+        <Box className="pipcalcdevice">
           <Box className="deviceheader">Compounding Profits Calculator</Box>
           <Box className="devicebody">
             <FormControl className="calcform" variant="standard">
@@ -67,7 +67,7 @@ function CompoundCal() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: 16,
+                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -96,7 +96,7 @@ function CompoundCal() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: 16,
+                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -121,7 +121,7 @@ function CompoundCal() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: 16,
+                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -160,6 +160,7 @@ function CompoundCal() {
                   background: "#359602",
                   color: "white",
                   height: "45px",
+                  fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
                   borderRadius: "5px",
                   "&:hover": {
                     background: "#359602",
@@ -190,6 +191,8 @@ function CompoundCal() {
                   height: "45px",
                   borderRadius: "5px",
                   alignSelf: "center",
+                  fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
+                  marginBottom: "15%",
                   "&:hover": {
                     background: "#1D4353",
                   },

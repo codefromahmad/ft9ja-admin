@@ -79,18 +79,12 @@ function Challenge() {
               borderTop: "1px solid #E5E5E5",
               borderBottom: "1px solid #E5E5E5",
             }}
+            className="sections"
           >
             <Box sx={{ marginLeft: "7%" }}>
               <p className="classicp">(1) Choose Account Size</p>
               <br />
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  width: "58%",
-                }}
-                className="classicbtns"
-              >
+              <Box className="classicbtns">
                 <Button
                   onClick={() => {
                     console.log("clicked");
@@ -140,6 +134,7 @@ function Challenge() {
               borderTop: "1px solid #E5E5E5",
               borderBottom: "1px solid #E5E5E5",
             }}
+            className="sections"
           >
             <Box sx={{ marginLeft: "7%" }}>
               <p className="classicp">(2) Choose a Broker</p>
@@ -197,6 +192,7 @@ function Challenge() {
               borderTop: "1px solid #E5E5E5",
               borderBottom: "1px solid #E5E5E5",
             }}
+            className="sections"
           >
             <Box sx={{ marginLeft: "7%" }}>
               <p className="classicp">(3) Payout Frequent</p>
