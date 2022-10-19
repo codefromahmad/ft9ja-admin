@@ -982,7 +982,7 @@ h4 {
   font-family: "Author";
   font-style: normal;
   font-weight: 375;
-  font-size: 100%;
+  font-size: calc(0.8vw + 1.1vmin);
   line-height: 100%;
   text-align: center;
   margin-left: auto;
@@ -1040,7 +1040,7 @@ h4 {
   margin-bottom: 5%;
 }
 .accordion p {
-  font-size: calc(0.9vw + 0.9vh + 0.9vmin);
+  font-size: calc(0.5vw + 0.6vh + 0.9vmin);
 }
 
 .accordion__heading {
