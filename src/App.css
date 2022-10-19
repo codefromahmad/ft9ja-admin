@@ -412,7 +412,7 @@ h4 {
 .pipcalcdevice {
   box-sizing: border-box;
   width: 34%;
-  height: 774px;
+
   margin-top: 6%;
   background: #fefefe;
   border: 0.3px solid rgba(53, 150, 2, 0.7);
@@ -428,7 +428,7 @@ h4 {
   font-family: "Author";
   font-style: normal;
   font-weight: 494;
-  font-size: calc(0.7rem + 0.2vw + 2.4vh);
+  font-size: calc(0.5rem + 0.2vw + 2.4vh);
   line-height: 210%;
   text-align: center;
   color: rgba(255, 255, 255, 0.9);

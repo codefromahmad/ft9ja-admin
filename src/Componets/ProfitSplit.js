@@ -63,7 +63,7 @@ function ProfitSplit() {
           <br />
           <Profitgirl width="70%" />
         </Box>
-        <Box className="pipcalcdevice" style={{ height: "815px" }}>
+        <Box className="pipcalcdevice">
           <Box className="deviceheader">Profit Split</Box>
           <Box className="devicebody">
             <FormControl className="calcform" variant="standard">
