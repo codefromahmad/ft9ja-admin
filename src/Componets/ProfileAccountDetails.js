@@ -16,6 +16,7 @@ function ProfileAccountDetails() {
         marginLeft: "auto",
         marginRight: "auto",
       }}
+      className="ProfileMain"
     >
       <Box
         sx={{
@@ -61,19 +62,21 @@ function ProfileAccountDetails() {
                 boxShadow: "0px 0px 6px rgba(0, 0, 0, 0.1)",
                 backgroundColor: "white",
               }}
+              className="ProfileAccountDetails"
             >
-              <Box className="AccHead">Account {index + 1}</Box>
+              <Box className="AccHead1">Account {index + 1}</Box>
               <FormControl
                 sx={{
                   width: "-webkit-fill-available",
                   padding: "0% 7% 0% 7%",
                   marginTop: "5%",
-                  fontSize: "calc(0.5rem + 0.5vw) !important",
+                  fontSize: "calc(0.5rem + 0.5vw)",
                   // marginLeft: "auto",
                   // marginRight: "auto",
                   // height: "auto",
                   // border: "1px solid ",
                 }}
+                className="ProfileAccountForm"
                 variant="standard"
               >
                 <label>Platform </label>
@@ -82,6 +85,7 @@ function ProfileAccountDetails() {
                     readOnly: true,
                   }}
                   value={item.acc.platform}
+                  className="ProfileAccountInput"
                   sx={{
                     "& .MuiInputBase-input": {
                       // border: "1px solid #ced4da",
@@ -92,7 +96,7 @@ function ProfileAccountDetails() {
                       boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
                       borderRadius: "5px",
                       height: "13px",
-                      fontSize: "calc(0.5rem + 0.5vw) !important",
+                      fontSize: "calc(0.5rem + 0.5vw) ",
                     },
                   }}
                 />
@@ -103,6 +107,7 @@ function ProfileAccountDetails() {
                     readOnly: true,
                   }}
                   value={item.acc.number}
+                  className="ProfileAccountInput"
                   sx={{
                     "& .MuiInputBase-input": {
                       // border: "1px solid #ced4da",
@@ -123,6 +128,7 @@ function ProfileAccountDetails() {
                     readOnly: true,
                   }}
                   value={item.acc.broker}
+                  className="ProfileAccountInput"
                   sx={{
                     "& .MuiInputBase-input": {
                       // border: "1px solid #ced4da",
@@ -143,6 +149,7 @@ function ProfileAccountDetails() {
                     readOnly: true,
                   }}
                   value={item.acc.acc_size}
+                  className="ProfileAccountInput"
                   sx={{
                     "& .MuiInputBase-input": {
                       // border: "1px solid #ced4da",

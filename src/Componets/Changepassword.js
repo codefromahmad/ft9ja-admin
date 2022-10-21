@@ -36,6 +36,7 @@ function Changepassword(props) {
         marginRight: "auto",
         backgroundColor: "white",
       }}
+      className="ProfileMain"
     >
       <Box
         sx={{
@@ -62,8 +63,9 @@ function Changepassword(props) {
           fontSize: "calc(0.5rem + 0.5vw) !important",
         }}
         variant="standard"
+        className="ProfileInfoDetails"
       >
-        <div style={{ width: "45%" }}>
+        <div style={{ width: "45%" }} className="ProfileInfoDetails1">
           <label>Confirm new password</label>
           <br />
           <TextField
@@ -86,7 +88,7 @@ function Changepassword(props) {
             onChange={(e) => setPassword1(e.target.value)}
           />
         </div>
-        <div style={{ width: "45%" }}>
+        <div style={{ width: "45%" }} className="ProfileInfoDetails1">
           <label>New Password</label>
           <br />
           <TextField

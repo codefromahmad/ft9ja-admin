@@ -14,9 +14,13 @@ function AffiliateFoot() {
         marginLeft: "auto",
         marginRight: "auto",
       }}
+      className="AffiliateFoot"
     >
       <div>
-        <p style={{ width: "100%", fontSize: "calc(0.9vw + 1.1vmin)" }}>
+        <p
+          className="AffiliateFootp"
+          style={{ width: "100%", fontSize: "calc(0.9vw + 1.1vmin)" }}
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
         </p>
         <Button
@@ -41,6 +45,7 @@ function AffiliateFoot() {
           width: "40%",
           height: "70%",
         }}
+        className="AffiliateFootblank"
       ></div>
     </div>
   );

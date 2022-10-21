@@ -18,7 +18,10 @@ function ZumaDashboard() {
         <AccountBtn />
         <br />
         <Box>
-          <Box sx={{ display: "flex", flexWrap: "nowrap", width: "100%" }}>
+          <Box
+            sx={{ display: "flex", flexWrap: "nowrap", width: "100%" }}
+            className="dashmain"
+          >
             <Accounts />
             <AccountDetails />
           </Box>

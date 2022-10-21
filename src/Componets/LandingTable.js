@@ -450,6 +450,7 @@ function LandingTable() {
               color: "#1B1A1A",
               fontSize: "140%",
             }}
+            className="accordion_grp_btn"
           >
             <Button
               href="/classic"

@@ -246,6 +246,7 @@ function Challenge() {
           <Box className="agreement">
             {" "}
             <Checkbox
+              className="checkbox"
               sx={{
                 [`&, &.${checkboxClasses.checked}`]: {
                   color: "#359602",

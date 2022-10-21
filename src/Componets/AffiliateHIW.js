@@ -28,6 +28,7 @@ function AffiliateHIW() {
           textAlign: "center",
           fontSize: "calc(1.9vw + 0.7vh + .1vmin)",
         }}
+        className="HIWheader"
       >
         How it Works
       </Box>
@@ -38,6 +39,7 @@ function AffiliateHIW() {
           display: "flex",
           justifyContent: "center",
         }}
+        className="HIWvideo"
       >
         <>
           <ModalVideo
@@ -60,6 +62,7 @@ function AffiliateHIW() {
             sx={{
               width: "30%",
             }}
+            className="HIWvideo1"
           >
             <img
               onClick={() => setOpen(true)}
@@ -77,6 +80,7 @@ function AffiliateHIW() {
             fontWeight: 375,
             fontSize: "calc(0.8vw + 1.1vmin)",
           }}
+          className="HIWvideoText"
         >
           <ol>
             <li>

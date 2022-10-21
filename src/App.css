@@ -171,6 +171,21 @@ body {
   border-radius: 5px 5px 0px 0px;
 }
 
+.AccHead1 {
+  background-color: #359602;
+  min-height: 44px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: 23px;
+  font-weight: 494;
+  font-size: calc(0.6rem + 0.5vw) !important;
+  padding-top: 10px;
+  border-radius: 5px 5px 0px 0px;
+}
+
 h4 {
   font-weight: 400;
 }
@@ -1102,9 +1117,234 @@ h4 {
   }
   .classicbtns button {
     height: 40%;
+    min-width: max-content;
   }
   .sections {
     height: 125px !important;
+  }
+  .accordion {
+    width: 100%;
+  }
+  .accordion__heading {
+    font-size: 60% !important;
+    width: 35%;
+  }
+  .accordion p {
+    font-size: calc(0.5vw + 0.5vh + 0.9vmin);
+  }
+  .accordion__btn {
+    width: 61%;
+    height: 24px;
+    text-align: center;
+    font-size: calc(0.2vw + 0.5vh + 0.9vmin) !important;
+    min-width: inherit !important;
+  }
+  .accordion_grp_btn {
+    margin-right: 0% !important;
+  }
+  .checkbox {
+    transform: scale(0.7);
+    padding: 0px !important;
+  }
+  .agreementbtn {
+    width: 60%;
+    height: auto;
+  }
+  .GetAccbtn {
+    width: auto !important;
+    height: auto;
+  }
+  .dashmain {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .Accdetails {
+    width: 100% !important;
+  }
+  .AccText {
+    font-size: calc(1.6vw + 1.9vh + 0.6vmin) !important;
+  }
+  .Accounts {
+    flex-wrap: wrap;
+  }
+  .AccBtn {
+    flex-wrap: nowrap;
+    flex-direction: row !important;
+    width: 100%;
+  }
+  .css-lfwcke-MuiTabs-flexContainer {
+    flex-wrap: nowrap;
+    flex-direction: row !important;
+  }
+  .DashGraph {
+    flex-wrap: wrap;
+  }
+  .LineGraph2 {
+    width: 90%;
+    margin-bottom: 8%;
+  }
+  .FeedGraphs {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .FeedBarGraph {
+    width: 100%;
+  }
+  .Datesection {
+    width: 100%;
+  }
+  .LineGraph3 {
+    width: 100%;
+  }
+  .PayoutSection {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .Payoutbtn {
+    width: calc(0.9vw + 5.4vh + 22.5vmin) !important;
+    font-size: calc(0.5vw + 0.9vh + 0.6vmin) !important;
+  }
+  .PayoutBoxlink {
+    line-height: calc(1.4rem + 0.5vw);
+    border-top: 1px solid rgba(0, 0, 0, 0.7);
+    border-left: none;
+    width: 65%;
+  }
+  .PayoutSection {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .PayoutBox {
+    border-top: 1px solid rgba(0, 0, 0, 0.7);
+    border-left: none;
+    width: 90% !important;
+    margin-top: 5%;
+  }
+  .PayoutImg {
+    margin-top: inherit !important;
+  }
+  #simple-tabpanel-1 {
+    width: 100%;
+  }
+  .Carousel {
+    width: 100%;
+    height: 766px;
+  }
+  .Accs {
+    font-size: calc(1.6vw + 1.9vh + 0.6vmin) !important;
+  }
+  .Tab2 {
+    font-size: calc(1.7vw + 1.3vh + 0.7vmin) !important;
+  }
+  .PayoutSection3 {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .affbar {
+    width: 100% !important;
+  }
+  .css-99l4xy-MuiSvgIcon-root {
+    font-size: 1.5rem !important;
+  }
+  .css-q2p6l4-MuiFormControl-root-MuiTextField-root .MuiInputBase-input {
+    font-size: 1rem !important;
+  }
+  .AffiText {
+    width: 100% !important;
+    text-align: center;
+    font-size: calc(0.9vw + 2.6vmin) !important;
+  }
+  .RefAffiText {
+    text-align: center;
+    font-size: calc(1.5vw + 1.5vh + 1.2vmin) !important;
+  }
+  .css-q2p6l4-MuiFormControl-root-MuiTextField-root {
+    width: 50% !important;
+  }
+  .HIWheader {
+    font-size: calc(4.9vw + 0.7vh + 0.1vmin) !important;
+  }
+  .HIWvideo {
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .HIWvideo1 {
+    width: 90% !important;
+    height: 100%;
+  }
+  .HIWvideoText {
+    width: 100% !important;
+    margin-left: 0px !important;
+    font-size: calc(1.3vw + 2.1vmin) !important;
+  }
+  .affTable {
+    font-size: calc(1.7vw + 0.5vh + 1vmin) !important;
+  }
+
+  .AffiliateFoot {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+    border-radius: 3px;
+    height: 300px !important;
+  }
+  .AffiliateFootp {
+    font-size: calc(2.9vw + 1.6vmin) !important;
+  }
+  .AffiliateFootblank {
+    width: 73% !important;
+    height: 50% !important;
+  }
+  .pipcalc__container {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .pipcalctexts {
+    width: 90%;
+    text-align: center;
+  }
+  .pipcalctexts p {
+    text-align: center;
+    width: 90%;
+  }
+  .pipcalctexts h2 {
+    text-align: center;
+  }
+  .pipcalcdevice {
+    width: 90%;
+  }
+  .ProfileMain {
+    width: 100% !important;
+  }
+  .ProfileAccountDetails {
+    width: 90% !important;
+  }
+  .ProfileAccountForm {
+    font-size: calc(0.9rem + 0.5vw) !important;
+  }
+  .ProfileAccountInput {
+    font-size: calc(0.9rem + 0.5vw) !important;
+  }
+  .AccHead1 {
+    font-size: calc(0.9rem + 0.9vw) !important;
+  }
+  .ProfileInfoDetails {
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+  .ProfileInfoDetails1 {
+    width: 100% !important;
+    font-size: calc(0.9rem + 0.5vw) !important;
+  }
+  .ProfileInfoDetails1a {
+    font-size: calc(0.9rem + 0.5vw) !important;
   }
 }
 
@@ -1221,6 +1461,26 @@ h4 {
     font-size: calc(0.4rem + 0.4vw + 0.9vh);
 
     align-items: center;
+  }
+  .ProfileMain {
+    width: 100% !important;
+  }
+  .ProfileAccountDetails {
+    width: 90% !important;
+  }
+  .ProfileAccountForm {
+    font-size: calc(0.9rem + 0.5vw) !important;
+  }
+  .ProfileAccountInput {
+    font-size: calc(0.9rem + 0.5vw) !important;
+  }
+  .ProfileInfoDetails {
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+  .ProfileInfoDetails1 {
+    width: 100% !important;
   }
 }
 

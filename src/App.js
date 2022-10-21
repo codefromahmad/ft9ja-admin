@@ -28,44 +28,43 @@ function App() {
   const tab = useMediaQuery("(min-width:601px)" && "(max-width:1023px)");
   const desktop = useMediaQuery("(min-width:1024px)");
   const token = localStorage.getItem("access_token");
-  if (mobile) {
-    return (
-      <Typography variant="h4">
-        NOTE: mobile view is not yet implemented. Please use a desktop
-      </Typography>
-    );
-    // } else if (tab) {
-    //   return (
-    //     <Typography variant="h4">
-    //       NOTE: tab view is not yet implemented. Please use a desktop
-    //     </Typography>
-    //   );
-  } else {
-    return (
-      <div className="App">
-        <Router>
-          <AuthProvider>
-            <Routes>
-              <Route path="/" element={<Home />} />
+  // if (mobile) {
+  //   return (
+  //     <Typography variant="h4">
+  //       NOTE: mobile view is not yet implemented. Please use a desktop
+  //     </Typography>
+  //   );
+  //   // } else if (tab) {
+  //   //   return (
+  //   //     <Typography variant="h4">
+  //   //       NOTE: tab view is not yet implemented. Please use a desktop
+  //   //     </Typography>
+  //   //   );
+  // } else {
+  return (
+    <div className="App">
+      <Router>
+        <AuthProvider>
+          <Routes>
+            <Route path="/" element={<Home />} />
 
-              <Route path="/dashboards" element={<ZumaDashboard />} />
+            <Route path="/dashboards" element={<ZumaDashboard />} />
 
-              <Route path="/apps" element={<Apps />} />
+            <Route path="/apps" element={<Apps />} />
 
-              <Route path="/login" element={<Login />} />
-              <Route path="/register" element={<Register />} />
-              <Route path="/linetest" element={<ReBar />} />
-              <Route path="/test" element={<Test />} />
-              <Route path="/classic" element={<Classic />} />
-              <Route path="/challenge" element={<Challenge />} />
-              <Route path="/profile" element={<Profile />} />
-              <Route path="/affiliate" element={<Affiliate />} />
-            </Routes>
-          </AuthProvider>
-        </Router>
-      </div>
-    );
-  }
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/linetest" element={<ReBar />} />
+            <Route path="/test" element={<Test />} />
+            <Route path="/classic" element={<Classic />} />
+            <Route path="/challenge" element={<Challenge />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/affiliate" element={<Affiliate />} />
+          </Routes>
+        </AuthProvider>
+      </Router>
+    </div>
+  );
 }
 
 export default App;

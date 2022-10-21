@@ -79,6 +79,7 @@ function Classic() {
               borderTop: "1px solid #E5E5E5",
               borderBottom: "1px solid #E5E5E5",
             }}
+            className="sections"
           >
             <Box sx={{ marginLeft: "7%" }}>
               <p className="classicp">(1) Choose Account Size</p>
@@ -140,6 +141,7 @@ function Classic() {
               borderTop: "1px solid #E5E5E5",
               borderBottom: "1px solid #E5E5E5",
             }}
+            className="sections"
           >
             <Box sx={{ marginLeft: "7%" }}>
               <p className="classicp">(2) Choose a Broker</p>
@@ -202,6 +204,7 @@ function Classic() {
               borderTop: "1px solid #E5E5E5",
               borderBottom: "1px solid #E5E5E5",
             }}
+            className="sections"
           >
             <Box sx={{ marginLeft: "7%" }}>
               <p className="classicp">(3) Payout Frequent</p>

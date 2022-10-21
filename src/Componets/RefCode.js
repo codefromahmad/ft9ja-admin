@@ -68,6 +68,7 @@ function RefCode() {
           style={{
             fontSize: "calc(0.9vw + 0.9vh + 0.9vmin)",
           }}
+          className="RefAffiText"
         >
           Referral Code
         </h3>
@@ -125,6 +126,7 @@ function RefCode() {
                 lineHeight: "23px",
                 fontSize: "calc(0.8vw + 1.1vmin)",
               }}
+              className="AffiText"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus sed
               lacus, tellus sed lacinia sem sagittis, justo, varius. Nisi

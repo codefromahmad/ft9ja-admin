@@ -53,6 +53,7 @@ function ContactInfo(props) {
         marginRight: "auto",
         backgroundColor: "white",
       }}
+      className="ProfileMain"
     >
       <Box
         sx={{
@@ -79,8 +80,9 @@ function ContactInfo(props) {
           fontSize: "calc(0.5rem + 0.5vw) !important",
         }}
         variant="standard"
+        className="ProfileInfoDetails"
       >
-        <div style={{ width: "45%" }}>
+        <div style={{ width: "45%" }} className="ProfileInfoDetails1">
           <label>Contact Phone* </label>
           <br />
           <TextField
@@ -105,7 +107,7 @@ function ContactInfo(props) {
             }}
           />
         </div>
-        <div style={{ width: "45%" }}>
+        <div style={{ width: "45%" }} className="ProfileInfoDetails1">
           <label>Email address*</label>
           <br />
           <TextField
@@ -140,8 +142,9 @@ function ContactInfo(props) {
           fontSize: "calc(0.5rem + 0.5vw) !important",
         }}
         variant="standard"
+        className="ProfileInfoDetails"
       >
-        <div style={{ width: "45%" }}>
+        <div style={{ width: "45%" }} className="ProfileInfoDetails1">
           <label>Country</label>
           <br />
           <TextField
@@ -205,7 +208,7 @@ function ContactInfo(props) {
             )}
           /> */}
         </div>
-        <div style={{ width: "45%" }}>
+        <div style={{ width: "45%" }} className="ProfileInfoDetails1">
           <label>City</label>
           <br />
           <TextField
@@ -233,8 +236,9 @@ function ContactInfo(props) {
           width: "-webkit-fill-available",
           padding: "0% 7% 0% 7%",
           marginTop: "5%",
-          fontSize: "calc(0.5rem + 0.5vw) !important",
+          fontSize: "calc(0.5rem + 0.5vw) ",
         }}
+        className="ProfileInfoDetails1a"
         variant="standard"
       >
         <label>Street Address*</label>

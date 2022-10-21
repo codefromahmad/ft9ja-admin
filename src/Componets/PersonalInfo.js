@@ -48,6 +48,7 @@ function PersonalInfo() {
         marginRight: "auto",
         backgroundColor: "white",
       }}
+      className="ProfileMain"
     >
       <Box
         sx={{
@@ -74,8 +75,9 @@ function PersonalInfo() {
           fontSize: "calc(0.5rem + 0.5vw) !important",
         }}
         variant="standard"
+        className="ProfileInfoDetails"
       >
-        <div style={{ width: "45%" }}>
+        <div className="ProfileInfoDetails1" style={{ width: "45%" }}>
           <label>First name* </label>
           <br />
           <TextField
@@ -100,7 +102,7 @@ function PersonalInfo() {
             }}
           />
         </div>
-        <div style={{ width: "45%" }}>
+        <div className="ProfileInfoDetails1" style={{ width: "45%" }}>
           <label>Last name* </label>
           <br />
           <TextField
@@ -134,9 +136,10 @@ function PersonalInfo() {
           justifyContent: "space-between",
           fontSize: "calc(0.5rem + 0.5vw) !important",
         }}
+        className="ProfileInfoDetails"
         variant="standard"
       >
-        <div style={{ width: "45%" }}>
+        <div className="ProfileInfoDetails1" style={{ width: "45%" }}>
           <label>Date of Birth* </label>
           <br />
           <TextField
@@ -160,7 +163,7 @@ function PersonalInfo() {
             }}
           />
         </div>
-        <div style={{ width: "45%" }}>
+        <div className="ProfileInfoDetails1" style={{ width: "45%" }}>
           <label>Gender</label>
           <br />
           <TextField
