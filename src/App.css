@@ -1233,6 +1233,9 @@ h4 {
     border-left: none;
     width: 65%;
   }
+  .CompoundingHeader {
+    margin-bottom: 10%;
+  }
 
   .Landing {
     width: 100%;
@@ -1346,7 +1349,7 @@ h4 {
   }
   .pipcalctexts p {
     text-align: center;
-    width: 90%;
+    width: 100%;
   }
   .pipcalctexts h2 {
     text-align: center;

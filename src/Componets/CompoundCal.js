@@ -42,7 +42,7 @@ function CompoundCal() {
     <Box className="pipcalc">
       <Box className="pipcalc__container">
         <Box className="pipcalctexts">
-          <h2>Compounding Profits Calculator</h2>
+          <h2 className="CompoundingHeader">Compounding Profits Calculator</h2>
           <p>
             This calculates how much your money will grow over a period of time.
           </p>
