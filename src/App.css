@@ -338,6 +338,18 @@ h4 {
   font-size: calc(0.5rem + 0.4vw);
   line-height: calc(2.4rem + 0.5vw);
 }
+.PayoutBoxlink1 {
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  height: 197px;
+  width: 44%;
+  font-weight: 375;
+  font-size: calc(0.5rem + 0.4vw);
+  line-height: calc(2.4rem + 0.5vw);
+}
 .PayoutBox {
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.7);
@@ -1108,6 +1120,8 @@ h4 {
   }
   .landbtn {
     height: inherit;
+
+    width: inherit;
   }
   .classicp {
     font-size: calc(1.9vw + 0.5vh + 0.5vmin);
@@ -1163,6 +1177,7 @@ h4 {
   }
   .AccText {
     font-size: calc(1.6vw + 1.9vh + 0.6vmin) !important;
+    margin-left: 25%;
   }
   .Accounts {
     flex-wrap: wrap;
@@ -1206,9 +1221,21 @@ h4 {
   }
   .PayoutBoxlink {
     line-height: calc(1.4rem + 0.5vw);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    border-left: none;
+    width: 100%;
+    margin-bottom: 10%;
+    font-size: calc(2.9vw + 0.9vh + 1.1vmin) !important;
+  }
+  .PayoutBoxlink1 {
+    line-height: calc(1.4rem + 0.5vw);
     border-top: 1px solid rgba(0, 0, 0, 0.7);
     border-left: none;
     width: 65%;
+  }
+
+  .Landing {
+    width: 100%;
   }
   .PayoutSection {
     flex-direction: column;
@@ -1230,11 +1257,15 @@ h4 {
     width: 100%;
     height: 766px;
   }
+  .PayoutSection2 {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
   .Accs {
-    font-size: calc(1.6vw + 1.9vh + 0.6vmin) !important;
+    font-size: calc(1.3vw + 1.5vh + 0.3vmin) !important;
   }
   .Tab2 {
-    font-size: calc(1.7vw + 1.3vh + 0.7vmin) !important;
+    font-size: calc(1.3vw + 0.8vh + 0.2vmin) !important;
   }
   .PayoutSection3 {
     flex-direction: column;
@@ -1269,6 +1300,10 @@ h4 {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+  }
+  .Landingheader h6 {
+    font-size: calc(0.8vw + 1.1vh + 0.9vmin) !important;
+    width: 100%;
   }
   .HIWvideo1 {
     width: 90% !important;
@@ -1315,6 +1350,10 @@ h4 {
   }
   .pipcalctexts h2 {
     text-align: center;
+    font-size: calc(0.5rem + 0.2vw + 1.9vh);
+  }
+  .deviceheader {
+    font-size: calc(0.5rem + 0.2vw + 1.7vh);
   }
   .pipcalcdevice {
     width: 90%;
@@ -1410,6 +1449,9 @@ h4 {
     font-size: calc(0.5vw + 0.9vh + 0.6vmin) !important;
   }
   .PayoutBoxlink {
+    line-height: calc(1.4rem + 0.5vw);
+  }
+  .PayoutBoxlink1 {
     line-height: calc(1.4rem + 0.5vw);
   }
   .PayoutSection {

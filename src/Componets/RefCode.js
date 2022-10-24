@@ -79,7 +79,7 @@ function RefCode() {
           marginTop: "7%",
           height: "50%",
         }}
-        className="PayoutBoxlink"
+        className="PayoutBoxlink1"
       >
         <Box
           sx={{
