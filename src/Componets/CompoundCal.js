@@ -67,7 +67,7 @@ function CompoundCal() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
+                    fontSize: "calc(0.4rem + 0.4vw + 0.91vh)",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
