@@ -22,6 +22,7 @@ function Affiliate() {
           marginRight: "auto",
           marginLeft: "auto",
         }}
+        className="AffiliateMain"
       >
         <RefCode />
 

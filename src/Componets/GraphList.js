@@ -22,7 +22,6 @@ function GraphList(props) {
   } else if (num === "Last Month") {
     num = 30;
   }
-
   React.useEffect(() => {
     axios
       .post(`/getfeed/?days=${num}`, { number: showlogin })
@@ -34,7 +33,9 @@ function GraphList(props) {
       .catch((err) => {
         console.log(err);
       });
+    return () => {};
   }, [num, showlogin]);
+
   return (
     <Box>
       {info.map((feed, index) => {

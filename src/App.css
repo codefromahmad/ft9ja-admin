@@ -5,6 +5,14 @@ body {
   margin-bottom: 123px;
   background-color: #fafafa !important;
 }
+input[type="date"] {
+  display: flex;
+  display: -webkit-flex;
+  flex: 1 0 0;
+  -webkit-flex: 1 0 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 * {
   font-family: Author !important;
 }
@@ -74,7 +82,7 @@ body {
 }
 
 .GetAccbtn {
-  width: calc(1.9vw + 2.4vh + 21.5vmin) !important;
+  width: calc(1.9vw + 2.4vh + 26.5vmin) !important;
   height: 48px;
   background-color: #1d4353 !important;
   border-radius: 30px !important;
@@ -1106,6 +1114,12 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
+  .AffiliateMain {
+    width: 100% !important;
+  }
+  .css-j7qwjs {
+    flex-direction: row;
+  }
   .App {
     margin-left: auto;
     margin-right: auto;

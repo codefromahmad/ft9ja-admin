@@ -1,18 +1,19 @@
-// import React from "react";
-// import ReactDOM from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-// import "./index.css";
-// import App from "./App";
+import "./index.css";
+import App from "./App";
 // import axios from "axios";
 
 // // axios.defaults.baseURL = "http://127.0.0.1:8000/api";
 // axios.defaults.baseURL = "https://maindashbe.herokuapp.com/api";
 
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.Fragment>
+    <App />
+  </React.Fragment>
+);
 // );
 // document.getElementById("root");
 // import React from "react";
@@ -25,15 +26,22 @@
 //   </React.StrictMode>,
 //   document.getElementById("root")
 // );
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-ReactDOM.render(
-  <React.Fragment>
-    <App />
-  </React.Fragment>,
-  document.getElementById("root")
-);
+// import React from "react";
+// import ReactDOM from "react-dom";
+// import App from "./App";
+// ReactDOM.render(
+//   <React.Fragment>
+//     <App />
+//   </React.Fragment>,
+//   document.getElementById("root")
+// );
+
+// import App from "./App.js";
+// import {createRoot} from "react-dom/client";
+
+// const container = document.getElementById("react");
+// const root = createRoot(container);
+// root.render(<App />);
 
 // import React from "react";
 // import { render } from "react-dom";
