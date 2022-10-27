@@ -7,11 +7,14 @@ import { AccContext } from "../Context/OtherContext";
 import MainDashGraphNodata from "../Componets/MainDashGraphNodata";
 import PayoutNodata from "../Componets/PayoutNodata";
 import AsoDashboardNodata from "../Componets/AsoDashboardNodata";
+import { useMediaQuery } from "@mui/material";
 function AccGrpBtn() {
   const [value, setValue] = React.useState(0);
   const { values, values2 } = useContext(AccContext);
   const [showlogin] = values;
   const [showtype] = values2;
+  const mobile = useMediaQuery("(max-width:600px)");
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -50,7 +53,7 @@ function AccGrpBtn() {
         value={value}
         onChange={handleChange}
         aria-label="nav tabs example"
-        orientation="vertical"
+        orientation={mobile ? "horizontal" : "vertical"}
       >
         <Tab className="Accs" sx={sel} label={showtype}></Tab>
         <Tab className="Accs" sx={sel} label="Payout"></Tab>
