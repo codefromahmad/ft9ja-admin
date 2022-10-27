@@ -32,7 +32,7 @@ function RefCode() {
     return (
       <text
         x={x + width / 2}
-        y={y}
+        y={y - 3}
         fill="black"
         textAnchor="middle"
         // fontSize={"calc(0.9vw + 0.5vh + .1vmin)"}
@@ -47,7 +47,7 @@ function RefCode() {
     return (
       <text
         x={x + width / 2}
-        y={y}
+        y={y - 3}
         fill="black"
         textAnchor="middle"
         // fontSize={"calc(0.9vw + 0.5vh + .1vmin)"}
@@ -59,9 +59,9 @@ function RefCode() {
   return (
     <div className="PayoutSection3">
       <div
-        style={{
-          marginLeft: "10%",
-        }}
+        // style={{
+        //   marginLeft: "10%",
+        // }}
         className="RefText"
       >
         <h3
@@ -87,6 +87,7 @@ function RefCode() {
             flexDirection: "column",
             marginLeft: "15%",
           }}
+          className="PayoutBoxlinksection"
         >
           <ResponsiveContainer className={"affbar"} width="50%" height={124}>
             <BarChart

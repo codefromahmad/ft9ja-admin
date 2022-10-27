@@ -1154,11 +1154,12 @@ h4 {
     width: 100%;
   }
   .accordion__heading {
-    font-size: 60% !important;
+    font-size: 110% !important;
     width: 35%;
   }
   .accordion p {
-    font-size: calc(0.5vw + 0.5vh + 0.9vmin);
+    font-size: 85%;
+    place-self: center;
   }
   .accordion__btn {
     width: 61%;
@@ -1166,6 +1167,7 @@ h4 {
     text-align: center;
     font-size: calc(0.2vw + 0.5vh + 0.9vmin) !important;
     min-width: inherit !important;
+    line-height: 90% !important;
   }
   .accordion_grp_btn {
     margin-right: 0% !important;
@@ -1247,6 +1249,9 @@ h4 {
     border-left: none;
     width: 65%;
   }
+  .PayoutBoxlinksection {
+    margin-left: 0% !important;
+  }
   .CompoundingHeader {
     margin-bottom: 10%;
   }
@@ -1279,7 +1284,7 @@ h4 {
     flex-wrap: wrap;
   }
   .Accs {
-    font-size: calc(1.3vw + 1.5vh + 0.3vmin) !important;
+    font-size: calc(1.3vw + 1.1vh + 0.3vmin) !important;
   }
   .Tab2 {
     font-size: calc(1.3vw + 0.8vh + 0.2vmin) !important;
@@ -1380,6 +1385,9 @@ h4 {
   }
   .ProfileAccountDetails {
     width: 90% !important;
+  }
+  .AffiCode {
+    text-align: center;
   }
   .ProfileAccountForm {
     font-size: calc(0.9rem + 0.5vw) !important;
@@ -1490,6 +1498,10 @@ h4 {
   }
   .RefText {
     font-size: calc(0.9vw + 0.9vh + 0.9vmin);
+    text-align: center;
+  }
+  .AffiCode {
+    text-align: center;
   }
   .Refcodefield {
     width: calc(0.9vw + 5.4vh + 22.5vmin) !important;

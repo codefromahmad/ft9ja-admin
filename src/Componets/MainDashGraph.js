@@ -1,15 +1,20 @@
 import React from "react";
 import { Box, Tab, Tabs } from "@mui/material";
 import DailyDD from "./DailyDD";
+
+import DailyDDMobile from "./DailyDDMobile";
 import DailyDDText from "./DailyDDText";
 import TradingDays from "./TradingDays";
+import TradingDaysMobile from "./TradingDaysMobile";
 import TradingDaysText from "./TradingDaysText";
 import SecondChance from "./SecondChance";
 import ReBar from "./ReBar";
+import { useMediaQuery } from "@mui/material";
 import ReLine from "./ReLine";
 
 function MainDashGraph() {
   const [value, setValue] = React.useState(0);
+  const mobile = useMediaQuery("(max-width:600px)");
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -117,12 +122,12 @@ function MainDashGraph() {
       <TabPanel value={value} index={1}>
         <br />
         <DailyDDText />
-        <DailyDD />
+        {mobile ? <DailyDDMobile /> : <DailyDD />}
       </TabPanel>
       <TabPanel value={value} index={2}>
         <br />
         <TradingDaysText />
-        <TradingDays />
+        {mobile ? <TradingDaysMobile /> : <TradingDays />}
       </TabPanel>
       {/* <TabPanel value={value} index={3}>
         <TradingDaysText />

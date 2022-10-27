@@ -10,12 +10,14 @@ function DailyDD() {
   const [open, setOpen] = React.useState(false);
   const [open2, setOpen2] = React.useState(false);
   const [val, setVal] = React.useState("");
+  const { values } = React.useContext(AccContext);
+  const [showlogin, setShowlogin] = values;
   // const { values, values2 } = React.useContext(AccContext);
   // const [showlogin, setShowlogin] = values;
   // const [setShowType] = values2;
   React.useEffect(() => {
     axios
-      .post("/getdailyddloss/", { number: "4985198" })
+      .post("/getdailyddloss/", { number: showlogin })
       .then((res) => {
         console.log(res.data);
         setInfo(
@@ -29,7 +31,7 @@ function DailyDD() {
       });
     console.log("info:", info);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [showlogin]);
 
   const calendarStartDate = new Date("2022-01-01");
   const calendarDatesArray = [];

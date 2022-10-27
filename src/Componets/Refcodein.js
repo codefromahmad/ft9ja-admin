@@ -26,7 +26,7 @@ function Refcodein() {
     navigator.clipboard.writeText(refcode);
   };
   return (
-    <div>
+    <div className="AffiCode">
       <TextField
         InputProps={{
           readOnly: true,

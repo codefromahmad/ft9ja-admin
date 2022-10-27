@@ -1,16 +1,18 @@
 import React from "react";
 import { Box, Tab, Tabs } from "@mui/material";
-import DashBarGraph from "./DashBarGraph";
-import DashLineGraph from "./DashLineGraph";
+import DailyDDMobile from "./DailyDDMobile";
+import TradingDaysMobile from "./TradingDaysMobile";
 import DailyDD from "./DailyDD";
 import DailyDDText from "./DailyDDText";
 import TradingDays from "./TradingDays";
 import TradingDaysText from "./TradingDaysText";
 import ReBar from "./ReBar";
 import ReLine from "./ReLine";
+import { useMediaQuery } from "@mui/material";
 
 function AsoDashboard() {
   const [value, setValue] = React.useState(0);
+  const mobile = useMediaQuery("(max-width:600px)");
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -102,12 +104,12 @@ function AsoDashboard() {
       <TabPanel value={value} index={1}>
         <br />
         <DailyDDText />
-        <DailyDD />
+        {mobile ? <DailyDDMobile /> : <DailyDD />}
       </TabPanel>
       <TabPanel value={value} index={2}>
         <br />
         <TradingDaysText />
-        <TradingDays />
+        {mobile ? <TradingDaysMobile /> : <TradingDays />}
       </TabPanel>
     </Box>
   );
