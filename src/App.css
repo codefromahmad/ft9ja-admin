@@ -78,7 +78,7 @@ input[type="date"] {
   margin-bottom: 10px;
   border-radius: 2px !important;
   font-family: inherit !important;
-  font-size: calc(0.5rem + 0.5vw) !important;
+  font-size: calc(0.2rem + 0.2vw + 0.9vh) !important;
 }
 
 .GetAccbtn {
@@ -174,7 +174,7 @@ input[type="date"] {
   justify-content: center;
   line-height: 23px;
   font-weight: 494;
-  font-size: calc(0.6rem + 0.5vw) !important;
+  /* font-size: calc(0.6rem + 0.5vw) !important; */
   padding-top: 10px;
   border-radius: 5px 5px 0px 0px;
 }
@@ -1114,6 +1114,9 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
+  .Tab1 {
+    font-size: calc(1.3vw + 1vh + 0.3vmin) !important;
+  }
   .AffiliateMain {
     width: 100% !important;
   }
@@ -1128,13 +1131,13 @@ h4 {
     height: 33px;
   }
   .landp {
-    width: 90%;
+    width: 95%;
     height: 23%;
-    font-size: calc(1.9vw + 1.6vmin);
+    font-size: calc(0.4rem + 0.4vw + 1.2vh);
   }
   .landbtn {
     height: inherit;
-
+    font-size: calc(0.4rem + 0.4vw + 0.9vh);
     width: inherit;
   }
   .classicp {
@@ -1183,6 +1186,7 @@ h4 {
   .GetAccbtn {
     width: auto !important;
     height: auto;
+    font-size: calc(0.2rem + 0.2vw + 0.9vh) !important;
   }
   .dashmain {
     flex-direction: column-reverse;
@@ -1192,8 +1196,9 @@ h4 {
     width: 100% !important;
   }
   .AccText {
-    font-size: calc(1.6vw + 1.9vh + 0.6vmin) !important;
+    font-size: calc(1.6vw + 1.3vh + 0.3vmin) !important;
     margin-left: 25%;
+    font-weight: 494 !important;
   }
   .Accounts {
     flex-wrap: wrap;
@@ -1284,7 +1289,7 @@ h4 {
     flex-wrap: wrap;
   }
   .Accs {
-    font-size: calc(1.3vw + 1.1vh + 0.3vmin) !important;
+    font-size: calc(0.4rem + 0.4vw + 0.9vh) !important;
   }
   .Tab2 {
     font-size: calc(1.3vw + 0.8vh + 0.2vmin) !important;
@@ -1324,8 +1329,8 @@ h4 {
     align-items: center;
   }
   .Landingheader h6 {
-    font-size: calc(0.8vw + 1.1vh + 0.9vmin) !important;
-    width: 100%;
+    font-size: calc(0.4rem + 0.4vw + 1.2vh) !important;
+    width: 95%;
   }
   .HIWvideo1 {
     width: 90% !important;

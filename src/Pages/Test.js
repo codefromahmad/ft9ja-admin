@@ -1,137 +1,158 @@
 import React from "react";
-import CalendarHeatmap from "react-calendar-heatmap";
-import "react-calendar-heatmap/dist/styles.css";
-import "../GitGraphs.css";
-import { AccContext } from "../Context/OtherContext";
-import Carousel from "react-material-ui-carousel";
+import PropTypes from "prop-types";
+import { useTheme } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import Button from "@material-ui/core/Button";
+import Dialog from "@material-ui/core/Dialog";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogActions from "@material-ui/core/DialogActions";
+import { makeStyles } from "@material-ui/core/styles";
+import TableRow from "@mui/material/TableRow";
+import Paper from "@mui/material/Paper";
+import IconButton from "@mui/material/IconButton";
+import FirstPageIcon from "@mui/icons-material/FirstPage";
+import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
+import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
+import LastPageIcon from "@mui/icons-material/LastPage";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import axios from "../axios";
-function DailyDD() {
-  const [info, setInfo] = React.useState([]);
+import { info } from "sass";
+const useStyles = makeStyles((theme) => ({
+  root: {
+    [theme.breakpoints.down("xs")]: {
+      alignItems: "flex-end", // push the dialog to bottom
+    },
+  },
+  paper: {
+    // make the content full width
+    [theme.breakpoints.down("xs")]: {
+      margin: 0,
+      maxWidth: "100%",
+      width: "100%",
+      borderRadius: "40px 40px 0px 0px",
+    },
+  },
+}));
+
+function createData(name, calories) {
+  return { name, calories };
+}
+
+const rows = [
+  createData("Refree", <ArrowForwardIosIcon />),
+  createData("Stage", <ArrowForwardIosIcon />),
+  createData("Account", <ArrowForwardIosIcon />),
+  createData("Status", <ArrowForwardIosIcon />),
+];
+
+const useDialog = () => {
   const [open, setOpen] = React.useState(false);
-  const [open2, setOpen2] = React.useState(false);
-  const [val, setVal] = React.useState("");
-  // const { values, values2 } = React.useContext(AccContext);
-  // const [showlogin, setShowlogin] = values;
-  // const [setShowType] = values2;
-  React.useEffect(() => {
+  const [titles, setTitle] = React.useState("");
+  const [info, setInfo] = React.useState([]);
+  const openDialog = (row) => {
+    console.log(row);
+    setTitle(row.name);
+    setOpen(true);
     axios
-      .post("/getdailyddloss/", { number: "4985198" })
+      .get(`/referrals/`)
       .then((res) => {
         console.log(res.data);
-        setInfo(
-          res.data.map((item) => {
-            return { date: item.date, drawdown: item.drawdown };
-          })
-        );
+        setInfo(res.data);
       })
       .catch((err) => {
         console.log(err);
       });
-    console.log("info:", info);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const calendarStartDate = new Date("2022-01-01");
-  const calendarDatesArray = [];
-  for (let i = 1; i < 13; i++) {
-    calendarDatesArray.push({
-      start: new Date(
-        Date.UTC(
-          calendarStartDate.getFullYear(),
-          calendarStartDate.getMonth() + i - 1,
-          0
-        )
-      ),
-      end: new Date(
-        Date.UTC(
-          calendarStartDate.getFullYear(),
-          calendarStartDate.getMonth() + i,
-          0
-        )
-      ),
-    });
-  }
-
-  let handleClick = (value) => {
-    if (value === null) {
-      setOpen2(true);
-      setVal("no drawdowns for this day");
-    } else {
-      setOpen(true);
-      setVal(value);
-      console.log(value);
-    }
+  };
+  const handleClose = () => {
+    setOpen(false);
   };
 
+  const submitData = (id, email) => {
+    // post method to submit data:
+    console.log(id, email);
+    setOpen(false);
+  };
+  const props = {
+    open,
+    handleClose,
+    titles,
+    info,
+  };
+  return [openDialog, props];
+};
+export default function CustomPaginationActionsTable() {
+  const [page, setPage] = React.useState(0);
+  const [rowsPerPage, setRowsPerPage] = React.useState(5);
+  const classes = useStyles();
+  const [val, setVal] = React.useState("");
+  const [openDialog, dialogProps] = useDialog();
+
+  const MyDialog = ({ open, info, handleClose, submitData, titles }) => {
+    // console.log(submitData, "data", titles, "title");
+    return (
+      <div>
+        <Dialog
+          open={open}
+          classes={{ container: classes.root, paper: classes.paper }}
+        >
+          <DialogTitle style={{ textAlign: "center" }}>{titles}</DialogTitle>
+          {info.map((data, index) => (
+            <DialogContent key={index}>
+              <div
+                key={index}
+                style={{ display: "flex", justifyContent: "space-between" }}
+              >
+                <div>{data.person_referred}</div>
+              </div>
+            </DialogContent>
+          ))}
+          <Button onClick={handleClose}>Close</Button>
+        </Dialog>
+      </div>
+    );
+  };
   return (
-    <Carousel
-      autoPlay={false}
-      animation="slide"
-      indicators={true}
-      navButtonsProps={{
-        style: {
-          backgroundColor: "#359602",
-        },
-      }}
-    >
-      {calendarDatesArray.map((date, index) => (
-        <div key={index} style={{ margin: "6% 1% 0% 0%" }}>
-          <dialog
-            onClick={() => {
-              setOpen(false);
-            }}
-            open={open}
-          >
-            <div>
-              Had a Drawdown of {val.drawdown}% on {val.date}
-              <br />
-              <br />
-              <span>Click to close</span>
-            </div>
-          </dialog>
-          <dialog
-            onClick={() => {
-              setOpen2(false);
-            }}
-            open={open2}
-          >
-            <div>
-              No drawdowns for this day
-              <br />
-              <br />
-              <span>Click to close</span>
-            </div>
-          </dialog>
-          <CalendarHeatmap
-            startDate={date.start}
-            weekdayLabels={["Mon", "Mon", "Wed", "Wed", "Fri", "Fri", "Sun"]}
-            endDate={date.end}
-            values={info}
-            onClick={handleClick}
-            showWeekdayLabels={true}
-            classForValue={(value) => {
-              if (!value) {
-                return "color-empty";
-              }
-              if (value.drawdown === 0) {
-                return "color-scale-4";
-              }
-              if (value.drawdown < 5) {
-                return "color-scale-3";
-              }
-              if (value.drawdown < 10 && value.drawdown > 5) {
-                return "color-scale-2";
-              }
-              if (value.drawdown > 10) {
-                return "color-scale-red";
-              }
-              return "color-scale-red";
-            }}
-          />
-        </div>
-      ))}
-    </Carousel>
+    <TableContainer>
+      <Table aria-label="custom pagination table">
+        <TableBody>
+          {(rowsPerPage > 0
+            ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+            : rows
+          ).map((row) => (
+            <TableRow key={row.name}>
+              <TableCell
+                align="left"
+                sx={{
+                  border: "1px solid ",
+                  textAlign: "left",
+                }}
+                width={0.1}
+                className="affTable"
+              >
+                {row.name}
+              </TableCell>
+              <TableCell
+                sx={{
+                  border: "1px solid ",
+                  textAlign: "right",
+                }}
+                // width={1}
+                className="affTable"
+                onClick={(e) => openDialog(row)}
+              >
+                {row.calories}
+              </TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+
+      <MyDialog {...dialogProps}></MyDialog>
+    </TableContainer>
   );
 }
-
-export default DailyDD;
