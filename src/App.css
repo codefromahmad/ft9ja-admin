@@ -972,9 +972,19 @@ h4 {
   cursor: pointer;
 }
 
+.Btn div {
+  background-color: #359602;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.Btn a {
+  color: white;
+}
+
 .Landing {
   box-sizing: border-box;
-  width: 72%;
+  width: 80%;
   height: -webkit-fill-available;
   background: #fefefe;
   border: 0.5px solid rgba(53, 150, 2, 0.25);
@@ -992,6 +1002,7 @@ h4 {
 }
 
 .Landingheader {
+  padding:0px 25px;
   text-align: center;
 }
 
@@ -1005,24 +1016,23 @@ h4 {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.Landingheader p{
- font-size: 20px;
- padding-top: 5px;
- padding-bottom: 5px;
+.Landingheader p {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .Landingheader a {
-  font-size: 20px;
+  font-size: 18px;
 }
 .landp {
-  width: 40%;
+  width: 60%;
   height: 59px;
   left: 296px;
   top: 151px;
   font-family: "Author";
   font-style: normal;
   font-weight: 375;
-  font-size: calc(0.8vw + 1.1vmin);
+  font-size: 18px;
   line-height: 90%;
   text-align: center;
   margin-left: auto;
@@ -1032,13 +1042,13 @@ h4 {
 
 .Landingheader h6 {
   width: 60%;
-  height: 59px;
+  height: 40px;
   left: 296px;
   top: 151px;
   font-family: "Author";
   font-style: normal;
   font-weight: 375;
-  font-size: calc(0.8vw + 1.1vmin);
+  font-size: 16px;
   line-height: 100%;
   text-align: center;
   margin-left: auto;
@@ -1048,11 +1058,12 @@ h4 {
 
 .landbtn {
   width: 15%;
-  height: 57px;
+  height: 50px;
   background: #359602;
   border-radius: 5px;
   font-weight: 494;
-  font-size: 14px;
+  margin:10px 0px !important;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -1096,7 +1107,7 @@ h4 {
   margin-bottom: 5%;
 }
 .accordion p {
-  font-size: calc(0.5vw + 0.6vh + 0.9vmin);
+  font-size: 16px;
 }
 
 .accordion__heading {
@@ -1107,7 +1118,7 @@ h4 {
 }
 
 .accordion__btn {
-  /* color: #359602; */
+  color: #359602;
   cursor: pointer;
   background: #359602 !important;
   border-radius: 5px;
@@ -1150,14 +1161,16 @@ h4 {
   }
   .Landingheader h1 {
     height: 33px;
+    padding: 15px 0px;
   }
   .landp {
     width: 95%;
     height: 23%;
-    font-size: calc(0.4rem + 0.4vw + 1.2vh);
+    font-size: 18px;
   }
   .landbtn {
     height: inherit;
+    padding: 5px 0px;
     font-size: calc(0.4rem + 0.4vw + 0.9vh);
     width: inherit;
   }
@@ -1178,24 +1191,23 @@ h4 {
     width: 100%;
   }
   .accordion__heading {
-    font-size: 110% !important;
+    /* font-size: 12px; */
+    font-weight: bold;
     width: 35%;
   }
   .accordion p {
-    font-size: 85%;
+    font-size: 14px;
     place-self: center;
   }
   .accordion__btn {
-    width: 61%;
-    height: 24px;
+    width: 70%;
+    height: 30px;
     text-align: center;
-    font-size: calc(0.2vw + 0.5vh + 0.9vmin) !important;
+    /* font-size: calc(0.2vw + 0.5vh + 0.9vmin) !important; */
     min-width: inherit !important;
     line-height: 90% !important;
   }
-  .accordion_grp_btn {
-    margin-right: 0% !important;
-  }
+
   .checkbox {
     transform: scale(0.7);
     padding: 0px !important;
@@ -1350,8 +1362,8 @@ h4 {
     align-items: center;
   }
   .Landingheader h6 {
-    font-size: calc(0.4rem + 0.4vw + 1.2vh) !important;
-    width: 95%;
+    font-size: 16px;
+    width: 80%;
   }
   .HIWvideo1 {
     width: 90% !important;
@@ -1443,8 +1455,20 @@ h4 {
     margin-left: auto;
     margin-right: auto;
   }
+  .Landing {
+    width: 90%;
+  }
+  .Landingheader h6{
+    font-size:17px;
+  }
+
+  .Landingheader{
+    font-size:16px;
+  }
+
   .landbtn {
     height: 50px;
+    width: 120px;
     font-size: 12px;
   }
   .landp {
@@ -1455,15 +1479,16 @@ h4 {
     font-size: 120% !important;
   }
   .accordion p {
-    font-size: 70%;
+    font-size: 16px;
   }
   .accordion__text {
     line-height: 4.5 !important;
   }
   .accordion__btn {
+    /* font-size: 16px; */
     font-size: 35% !important;
     width: 100%;
-    height: 80%;
+    height: 30px;
   }
   .classicbtns button {
     height: auto;
@@ -1580,6 +1605,7 @@ h4 {
     width: 100% !important;
   }
 }
+
 
 @media only screen and (min-width: 1441px) {
   .Tab1 {

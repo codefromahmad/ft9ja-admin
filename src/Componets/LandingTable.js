@@ -445,7 +445,10 @@ function LandingTable() {
           <Typography
             variant="h5"
             sx={{
-              marginRight: "16%",
+              marginRight: {
+                xs: "8%",
+                sm: "13%",
+              },
               flexShrink: 0,
               color: "#1B1A1A",
               fontSize: "140%",

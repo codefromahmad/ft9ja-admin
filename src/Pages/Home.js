@@ -6,18 +6,48 @@ function Home() {
   const token = localStorage.getItem("access_token");
   return (
     <Box>
-      {token ? (
-        <div style={{ float: "right" }}>
-          <a className="bg-slate-800 rounded-md px-4 py-2" href="/dashboards">
-            Dashboard
-          </a>
-        </div>
-      ) : (
-        <div style={{ float: "right" }}>
-          <a href="/login">Login</a>
-        </div>
-      )}
       <Box className="Landing">
+        <Box sx={{
+          paddingY:2,
+          paddingLeft:1,
+        }}>
+          {token ? (
+            <Button
+              className="Btn"
+              sx={{
+                position: "absolute",
+                float: "right",
+                fontSize: 18,
+                textTransform: "none",
+                background: "#359602",
+                " &:hover": {
+                  backgroundColor: "#359602",
+                },
+              }}
+              variant="contained"
+              href="/dashboards"
+            >
+              Dashboard
+            </Button>
+          ) : (
+            <Button
+              className="Btn"
+              sx={{
+                float: "right",
+                fontSize: 18,
+                textTransform: "none",
+                background: "#359602",
+                " &:hover": {
+                  backgroundColor: "#359602",
+                },
+              }}
+              variant="contained"
+              href="/login"
+            >
+              Login
+            </Button>
+          )}
+        </Box>
         <Box
           sx={{
             fontSize: 20,
@@ -32,7 +62,7 @@ function Home() {
           <Button
             className="landbtn"
             sx={{
-              fontSize:20,
+              fontSize: 20,
               textTransform: "none",
               background: "#359602",
               " &:hover": {
@@ -45,7 +75,6 @@ function Home() {
             Let’s start
           </Button>
         </Box>
-        <br />
         <br />
         <LandingCarousel />
         <br />
