@@ -1,11 +1,13 @@
 import React from "react";
 import { Box, Tab, Tabs } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import ZumaDashboard from "../Pages/ZumaDashboard";
 import Home from "../Pages/Home";
 import Apps from "../Pages/Apps";
 import Affiliate from "./Affiliate";
 import { Link } from "react-router-dom";
 function MainNav() {
+  const matches = useMediaQuery("(max-width:435px)");
   const [value, setValue] = React.useState(0);
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -50,8 +52,8 @@ function MainNav() {
       <Tabs
         variant="scrollable"
         className="TabGrp1"
-        scrollButtons
-        allowScrollButtonsMobile
+        scrollButtons={matches}
+        allowScrollButtonsMobile={matches}
         value={value}
         onChange={handleChange}
         aria-label="nav tabs example"
