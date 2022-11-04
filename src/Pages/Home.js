@@ -8,7 +8,9 @@ function Home() {
     <Box>
       {token ? (
         <div style={{ float: "right" }}>
-          <a href="/dashboards">Dashboard</a>
+          <a className="bg-slate-800 rounded-md px-4 py-2" href="/dashboards">
+            Dashboard
+          </a>
         </div>
       ) : (
         <div style={{ float: "right" }}>
@@ -16,7 +18,12 @@ function Home() {
         </div>
       )}
       <Box className="Landing">
-        <Box className="Landingheader">
+        <Box
+          sx={{
+            fontSize: 20,
+          }}
+          className="Landingheader"
+        >
           <h1>A Big Title</h1>
           <p className="landp">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
@@ -25,6 +32,7 @@ function Home() {
           <Button
             className="landbtn"
             sx={{
+              fontSize:20,
               textTransform: "none",
               background: "#359602",
               " &:hover": {

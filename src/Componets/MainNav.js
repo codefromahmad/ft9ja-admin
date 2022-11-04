@@ -49,8 +49,9 @@ function MainNav() {
     <Box className="Nav1">
       <Tabs
         variant="scrollable"
-        scrollButtons={false}
         className="TabGrp1"
+        scrollButtons
+        allowScrollButtonsMobile
         value={value}
         onChange={handleChange}
         aria-label="nav tabs example"

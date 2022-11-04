@@ -21,7 +21,7 @@ function ProfileAccountDetails() {
       <Box
         sx={{
           textAlign: "center",
-          fontSize: "calc(0.9rem + 0.9vw) !important",
+          fontSize: 20,
           borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
           minHeight: "55px",
           backgroundColor: "white",

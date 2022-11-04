@@ -75,7 +75,10 @@ function Challenge() {
           <Box
             sx={{
               width: "100%",
-              height: "191px",
+              paddingY:{
+                xs:2,
+                lg:5,
+              },
               borderTop: "1px solid #E5E5E5",
               borderBottom: "1px solid #E5E5E5",
             }}
@@ -92,6 +95,10 @@ function Challenge() {
                   }}
                   variant="contained"
                   sx={{
+                    fontSize: {
+                      xs: 24,
+                      md: 30,
+                    },
                     background: size === "3000" ? "#359602" : "#3596021a",
                     color: size === "3000" ? "#fff" : "#000",
                   }}
@@ -211,6 +218,9 @@ function Challenge() {
                     setPayout("Monthly");
                   }}
                   sx={{
+                    fontSize:{
+
+                    },
                     background: payout === "Monthly" ? "#359602" : "#3596021a",
                     color: payout === "Monthly" ? "#fff" : "#000",
                   }}

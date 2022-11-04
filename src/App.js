@@ -48,7 +48,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
 
-            <Route path="/dashboards" element={<ZumaDashboard />} />
+            {/* <Route path="/dashboards" element={<ZumaDashboard />} />
 
             <Route path="/apps" element={<Apps />} />
 
@@ -59,7 +59,7 @@ function App() {
             <Route path="/classic" element={<Classic />} />
             <Route path="/challenge" element={<Challenge />} />
             <Route path="/profile" element={<Profile />} />
-            <Route path="/affiliate" element={<Affiliate />} />
+            <Route path="/affiliate" element={<Affiliate />} /> */}
           </Routes>
         </AuthProvider>
       </Router>
