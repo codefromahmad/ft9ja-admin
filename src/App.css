@@ -5,6 +5,42 @@ body {
   margin-bottom: 123px;
   background-color: #fafafa !important;
 }
+
+/* Login Page CSS*/
+.LoginBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LoginForum h1 {
+  text-align: center;
+}
+
+.LoginForum {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgb(29 67 83 / 10%);
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 20px 20px 20px;
+  width: 270px;
+  max-width: 500px;
+  margin-top: 10%;
+}
+
+.loginBtn {
+  color: black !important;
+}
+
+.loginBtn:hover {
+  background: white !important;
+}
+
+/* .loginBtn {
+} */
+/* Login Page CSS End*/
+
 input[type="date"] {
   display: flex;
   display: -webkit-flex;
@@ -1148,7 +1184,6 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
-
   .GetAccbtn {
     padding: 5px 8px !important;
     width: 145px !important;
@@ -1248,14 +1283,19 @@ h4 {
   }
   .AccText {
     font-size: 14px !important;
-    margin-left: 10%;
+    margin-left: 8%;
     font-weight: 494 !important;
   }
   .Accounts {
     flex-wrap: wrap;
   }
+  .css-heg063-MuiTabs-flexContainer {
+    justify-content: center;
+    padding-bottom: 5px;
+  }
   .AccBtn {
     flex-wrap: nowrap;
+    justify-content: center !important;
     flex-direction: row !important;
     width: 100%;
   }

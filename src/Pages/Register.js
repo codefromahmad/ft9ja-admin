@@ -3,8 +3,7 @@ import axios from "../axios";
 import { useNavigate, Link } from "react-router-dom";
 import {
   Box,
-  OutlinedInput,
-  InputLabel,
+  TextField,
   FormControl,
   Button,
   Typography,
@@ -58,9 +57,10 @@ function Register() {
     }
   };
   return (
-    <div>
+    <div className="LoginBox">
       <Box
         component={"form"}
+        className="LoginForum"
         display={"flex"}
         flexDirection={"column"}
         onSubmit={handleRegister}
@@ -71,10 +71,12 @@ function Register() {
           "& > :not(style)": { m: 1 },
         }}
       >
+        <h1>Register</h1>
         <FormControl margin={"normal"}>
-          <InputLabel htmlFor="component-outlined">firstname</InputLabel>
-          <OutlinedInput
+          {/* {/* <InputLabel htmlFor="component-outlined">firstname</InputLabel> */}
+          <TextField
             type={"name"}
+            label={"First Name"}
             value={firstname}
             onChange={(e) => setFirstname(e.target.value)}
             name={"firstname"}
@@ -84,9 +86,10 @@ function Register() {
           />
         </FormControl>
         <FormControl margin={"normal"}>
-          <InputLabel htmlFor="component-outlined">lastname</InputLabel>
-          <OutlinedInput
+          {/* {/* <InputLabel htmlFor="component-outlined">lastname</InputLabel> */}
+          <TextField
             type={"name"}
+            label={"Second Name"}
             value={lastname}
             onChange={(e) => setLastname(e.target.value)}
             name={"lastname"}
@@ -97,9 +100,10 @@ function Register() {
         </FormControl>
 
         <FormControl margin={"normal"}>
-          <InputLabel htmlFor="component-outlined">Email</InputLabel>
-          <OutlinedInput
+          {/* {/* <InputLabel htmlFor="component-outlined">Email</InputLabel> */}
+          <TextField
             type={"email"}
+            label={"Email"}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             name={"email"}
@@ -109,9 +113,10 @@ function Register() {
           />
         </FormControl>
         <FormControl margin={"normal"}>
-          <InputLabel htmlFor="component-outlined">phone</InputLabel>
-          <OutlinedInput
+          {/* {/* <InputLabel htmlFor="component-outlined">phone</InputLabel> */}
+          <TextField
             type={"phone"}
+            label={"Phone"}
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             name={"phone"}
@@ -121,9 +126,10 @@ function Register() {
           />
         </FormControl>
         <FormControl margin={"normal"}>
-          <InputLabel htmlFor="component-outlined">Broker</InputLabel>
-          <OutlinedInput
+          {/* {/* <InputLabel htmlFor="component-outlined">Broker</InputLabel> */}
+          <TextField
             type={"broker"}
+            label={"Broker"}
             value={broker}
             onChange={(e) => setBroker(e.target.value)}
             name={"broker"}
@@ -133,9 +139,10 @@ function Register() {
           />
         </FormControl>
         <FormControl margin={"normal"}>
-          <InputLabel htmlFor="component-outlined">Account Size</InputLabel>
-          <OutlinedInput
+          {/* {/* <InputLabel htmlFor="component-outlined">Account Size</InputLabel> */}
+          <TextField
             type={"accsize"}
+            label={"Account Size"}
             value={acc_size}
             onChange={(e) => setAccsize(e.target.value)}
             name={"accsize"}
@@ -145,9 +152,10 @@ function Register() {
           />
         </FormControl>
         <FormControl margin={"normal"}>
-          <InputLabel htmlFor="component-outlined">Payout</InputLabel>
-          <OutlinedInput
+          {/* {/* <InputLabel htmlFor="component-outlined">Payout</InputLabel> */}
+          <TextField
             type={"payout"}
+            label={"Payout"}
             value={payout}
             onChange={(e) => setPayout(e.target.value)}
             name={"payout"}
@@ -157,9 +165,10 @@ function Register() {
           />
         </FormControl>
         <FormControl margin={"normal"}>
-          <InputLabel htmlFor="component-outlined">Referral</InputLabel>
-          <OutlinedInput
+          {/* {/* <InputLabel htmlFor="component-outlined">Referral</InputLabel> */}
+          <TextField
             type={"referral_code"}
+            label={"Referral Code"}
             value={referral_code}
             onChange={(e) => setReferral(e.target.value)}
             name={"referral_code"}
@@ -169,9 +178,10 @@ function Register() {
           />
         </FormControl>
         <FormControl margin={"normal"}>
-          <InputLabel htmlFor="component-outlined">Password</InputLabel>
-          <OutlinedInput
+          {/* {/* <InputLabel htmlFor="component-outlined">Password</InputLabel> */}
+          <TextField
             type={"password"}
+            label={"Password"}
             value={password1}
             onChange={(e) => setPassword(e.target.value)}
             name={"password"}
@@ -182,9 +192,10 @@ function Register() {
         </FormControl>
 
         <FormControl margin={"normal"}>
-          <InputLabel htmlFor="component-outlined">Re-Password</InputLabel>
-          <OutlinedInput
+          {/* {/* <InputLabel htmlFor="component-outlined">Re-Password</InputLabel> */}
+          <TextField
             type={"password"}
+            label={"Re-Password"}
             value={password2}
             onChange={(e) => setPassword2(e.target.value)}
             name={"password2"}
@@ -197,14 +208,17 @@ function Register() {
           </FormHelperText>
         </FormControl>
         <Button
-          style={{ marginTop: "30px" }}
+          style={{ marginTop: "15px", marginBottom: "5px", color: "white" }}
           variant="contained"
           type={"submit"}
         >
           Register
         </Button>
-        <Typography variant="body2" color="error">
-          Already have an account? <Link to="/login">Login</Link>
+        <Typography variant="body2" sx={{ textAlign: "center" }}>
+          Already have an account?{" "}
+          <Link to="/login" className="loginBtn">
+            Login
+          </Link>
         </Typography>
       </Box>
     </div>
