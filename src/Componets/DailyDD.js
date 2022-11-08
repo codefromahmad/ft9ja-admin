@@ -42,7 +42,7 @@ function DailyDD() {
   };
 
   return (
-    <div style={{ margin: "6% 1% 0% 0%" }}>
+    <div style={{ margin: "7% 0% 0% 0%" }}>
       <dialog
         onClick={() => {
           setOpen(false);
