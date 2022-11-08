@@ -36,6 +36,7 @@ function ProfileAccountDetails() {
         height={542}
         sx={{
           backgroundColor: "white",
+          paddingBottom: "25px",
         }}
         autoPlay={false}
         swipeable={false}
@@ -70,7 +71,7 @@ function ProfileAccountDetails() {
                   width: "-webkit-fill-available",
                   padding: "0% 7% 0% 7%",
                   marginTop: "5%",
-                  fontSize: "calc(0.5rem + 0.5vw)",
+                  fontSize: "16px",
                   // marginLeft: "auto",
                   // marginRight: "auto",
                   // height: "auto",
@@ -80,6 +81,7 @@ function ProfileAccountDetails() {
                 variant="standard"
               >
                 <label>Platform </label>
+                <br />
                 <TextField
                   InputProps={{
                     readOnly: true,
@@ -96,12 +98,13 @@ function ProfileAccountDetails() {
                       boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
                       borderRadius: "5px",
                       height: "13px",
-                      fontSize: "calc(0.5rem + 0.5vw) ",
+                      fontSize: "16px ",
                     },
                   }}
                 />
                 <br />
                 <label>Login </label>
+                <br />
                 <TextField
                   InputProps={{
                     readOnly: true,
@@ -117,12 +120,13 @@ function ProfileAccountDetails() {
                       boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
                       borderRadius: "5px",
                       height: "13px",
-                      fontSize: "calc(0.5rem + 0.5vw) !important",
+                      fontSize: "16px !important",
                     },
                   }}
                 />
                 <br />
                 <label>Server </label>
+                <br />
                 <TextField
                   InputProps={{
                     readOnly: true,
@@ -138,12 +142,13 @@ function ProfileAccountDetails() {
                       boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
                       borderRadius: "5px",
                       height: "13px",
-                      fontSize: "calc(0.5rem + 0.5vw) !important",
+                      fontSize: "16px !important",
                     },
                   }}
                 />
                 <br />
                 <label>Account size </label>
+                <br />
                 <TextField
                   InputProps={{
                     readOnly: true,
@@ -159,7 +164,7 @@ function ProfileAccountDetails() {
                       boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
                       borderRadius: "5px",
                       height: "13px",
-                      fontSize: "calc(0.5rem + 0.5vw) !important",
+                      fontSize: "16px !important",
                     },
                   }}
                 />

@@ -1,11 +1,12 @@
 import React from "react";
 import {
   Box,
-  TextField,
+  TextF,
   FormControl,
   CircularProgress,
   MenuItem,
   Button,
+  TextField,
 } from "@mui/material";
 import axios from "../axios";
 function PersonalInfo() {
@@ -53,7 +54,7 @@ function PersonalInfo() {
       <Box
         sx={{
           textAlign: "center",
-          fontSize: "calc(0.9rem + 0.9vw)!important",
+          fontSize: "24px !important",
           borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
           minHeight: "55px",
           backgroundColor: "white",
@@ -72,13 +73,14 @@ function PersonalInfo() {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
-          fontSize: "calc(0.5rem + 0.5vw) !important",
+          fontSize: "16px !important",
         }}
         variant="standard"
         className="ProfileInfoDetails"
       >
         <div className="ProfileInfoDetails1" style={{ width: "45%" }}>
-          <label>First name* </label>
+          <label style={{ paddingBottom: "10px" }}>First name*</label>
+          <br />
           <br />
           <TextField
             style={{ width: "100%" }}
@@ -91,19 +93,19 @@ function PersonalInfo() {
                 // border: "1px solid #ced4da",
 
                 background: "#FFFFFF",
-
                 border: "0.5px solid rgba(0, 0, 0, 0.2)",
                 boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
                 borderRadius: "5px",
                 height: "13px",
                 width: "100%",
-                fontSize: "calc(0.5rem + 0.5vw) !important",
+                fontSize: "16px !important",
               },
             }}
           />
         </div>
         <div className="ProfileInfoDetails1" style={{ width: "45%" }}>
-          <label>Last name* </label>
+          <label className="label">Last name* </label>
+          <br />
           <br />
           <TextField
             InputProps={{
@@ -120,7 +122,7 @@ function PersonalInfo() {
                 boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
                 borderRadius: "5px",
                 height: "13px",
-                fontSize: "calc(0.5rem + 0.5vw) !important",
+                fontSize: "16px !important",
               },
             }}
           />
@@ -134,13 +136,14 @@ function PersonalInfo() {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
-          fontSize: "calc(0.5rem + 0.5vw) !important",
+          fontSize: "16px !important",
         }}
         className="ProfileInfoDetails"
         variant="standard"
       >
         <div className="ProfileInfoDetails1" style={{ width: "45%" }}>
-          <label>Date of Birth* </label>
+          <label className="label">Date of Birth* </label>
+          <br />
           <br />
           <TextField
             type="date"
@@ -158,13 +161,14 @@ function PersonalInfo() {
                 borderRadius: "5px",
                 height: "13px",
                 width: "100%",
-                fontSize: "calc(0.5rem + 0.5vw) !important",
+                fontSize: "16px !important",
               },
             }}
           />
         </div>
         <div className="ProfileInfoDetails1" style={{ width: "45%" }}>
-          <label>Gender</label>
+          <label className="label">Gender</label>
+          <br />
           <br />
           <TextField
             select
@@ -181,7 +185,7 @@ function PersonalInfo() {
                 borderRadius: "5px",
                 height: "13px !important",
                 width: "100%",
-                fontSize: "calc(0.5rem + 0.5vw) !important",
+                fontSize: "16px !important",
               },
             }}
           >
@@ -204,7 +208,7 @@ function PersonalInfo() {
           onClick={UpdatePersonalInformation}
           variant="contained"
           sx={{
-            width: "20%",
+            width: "90px",
             background: "#359602",
             color: "white",
             height: "45px",
@@ -214,7 +218,7 @@ function PersonalInfo() {
               background: "#359602",
             },
             marginBottom: "5%",
-            fontSize: "calc(0.5rem + 0.5vw) !important",
+            fontSize: "16px !important",
           }}
           endIcon={
             loading && (

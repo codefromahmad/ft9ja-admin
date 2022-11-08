@@ -5,7 +5,7 @@ import GraphList from "../Componets/GraphList";
 function FeedSection() {
   const [age, setAge] = React.useState("Current Feed");
   return (
-    <Box className="Feedsection">
+    <Box className="Feedsection addPadding">
       <DatePicker age={age} setAge={setAge} />
       <GraphList age={age} />
     </Box>

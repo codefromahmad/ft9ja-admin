@@ -6,12 +6,15 @@ import RefTable from "../Componets/RefTable";
 import AffiliateNav from "../Componets/AffiliateNav";
 import AffiliateFoot from "../Componets/AffiliateFoot";
 import { AccProvider } from "../Context/OtherContext";
+import MainNav from "../Componets/MainNav";
+import { useMediaQuery } from "@mui/material";
 
 function Affiliate() {
+  const mobile = useMediaQuery("(max-width:600px)");
   return (
     <AccProvider>
       <header>
-        <AffiliateNav />
+        <MainNav />
       </header>
       <Box
         sx={{

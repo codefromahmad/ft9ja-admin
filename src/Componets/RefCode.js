@@ -66,7 +66,7 @@ function RefCode() {
       >
         <h3
           style={{
-            fontSize: "calc(0.9vw + 0.9vh + 0.9vmin)",
+            fontSize: "22px",
           }}
           className="RefAffiText"
         >
@@ -125,7 +125,7 @@ function RefCode() {
               style={{
                 width: "95%",
                 lineHeight: "23px",
-                fontSize: "calc(0.8vw + 1.1vmin)",
+                fontSize: "16px",
               }}
               className="AffiText"
             >

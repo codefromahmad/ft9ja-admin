@@ -29,15 +29,19 @@ function AccountDetails() {
     <Box className="Accdetails">
       <Box className="AccHead">Account Details</Box>
       <p className="AccText">
-        <span style={{fontWeight:'bold'}}>Platform: </span><span style={{ fontWeight: "375" }}> {info.platform}</span>
+        <span style={{ fontWeight: "bold" }}>Platform: </span>
+        <span style={{ fontWeight: "375" }}> {info.platform}</span>
         <br />
-        <span style={{fontWeight:'bold'}}>Login: </span><span style={{ fontWeight: "375" }}> {info.number}</span>
+        <span style={{ fontWeight: "bold" }}>Login: </span>
+        <span style={{ fontWeight: "375" }}> {info.number}</span>
         <br />
-        <span style={{fontWeight:'bold'}}>Password: </span><span style={{ fontWeight: "375" }}> {info.password}</span>
+        <span style={{ fontWeight: "bold" }}>Password: </span>
+        <span style={{ fontWeight: "375" }}> {info.password}</span>
         <br />
-        <span style={{fontWeight:'bold'}}>Server: </span><span style={{ fontWeight: "375" }}> {info.broker}</span>
+        <span style={{ fontWeight: "bold" }}>Server: </span>
+        <span style={{ fontWeight: "375" }}> {info.broker}</span>
         <br />
-        <span style={{fontWeight:'bold'}}>Account Size: </span>
+        <span style={{ fontWeight: "bold" }}>Account Size: </span>
         <span style={{ fontWeight: "375" }}> {info.acc_size}</span>
       </p>
     </Box>

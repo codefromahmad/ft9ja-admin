@@ -69,7 +69,7 @@ function TalentBonus() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
+                    fontSize: "16px",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -99,7 +99,7 @@ function TalentBonus() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
+                    fontSize: "16px",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -130,7 +130,7 @@ function TalentBonus() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
+                    fontSize: "16px",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -165,7 +165,7 @@ function TalentBonus() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
+                    fontSize: "16px",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -201,7 +201,7 @@ function TalentBonus() {
                   width: "100%",
                   background: "#359602",
                   color: "white",
-                  fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
+                  fontSize: "16px",
                   height: "45px",
                   borderRadius: "5px",
                   "&:hover": {
@@ -234,7 +234,7 @@ function TalentBonus() {
                   borderRadius: "5px",
                   alignSelf: "center",
                   marginBottom: "15%",
-                  fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
+                  fontSize: "16px",
                   "&:hover": {
                     background: "#1D4353",
                   },

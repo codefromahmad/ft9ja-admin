@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Tab, Tabs } from "@mui/material";
+import NoData from "./NoData";
 function AsoDashboard() {
   const [value, setValue] = React.useState(0);
   const handleChange = (event, newValue) => {
@@ -81,19 +82,13 @@ function AsoDashboard() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <Box className="nodata">
-          <h1>Make/Select Account</h1>
-        </Box>
+        <NoData />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Box className="nodata">
-          <h1>Make/Select Account</h1>
-        </Box>
+        <NoData />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <Box className="nodata">
-          <h1>Make/Select Account</h1>
-        </Box>
+        <NoData />
       </TabPanel>
     </Box>
   );

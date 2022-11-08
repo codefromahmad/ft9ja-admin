@@ -58,7 +58,7 @@ function ContactInfo(props) {
       <Box
         sx={{
           textAlign: "center",
-          fontSize: "calc(0.9rem + 0.9vw)!important",
+          fontSize: "24px !important",
           borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
           minHeight: "55px",
           backgroundColor: "white",
@@ -77,13 +77,14 @@ function ContactInfo(props) {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
-          fontSize: "calc(0.5rem + 0.5vw) !important",
+          fontSize: "16px !important",
         }}
         variant="standard"
         className="ProfileInfoDetails"
       >
         <div style={{ width: "45%" }} className="ProfileInfoDetails1">
           <label>Contact Phone* </label>
+          <br />
           <br />
           <TextField
             style={{ width: "100%" }}
@@ -102,13 +103,14 @@ function ContactInfo(props) {
                 borderRadius: "5px",
                 height: "13px",
                 width: "100%",
-                fontSize: "calc(0.5rem + 0.5vw) !important",
+                fontSize: "16px !important",
               },
             }}
           />
         </div>
         <div style={{ width: "45%" }} className="ProfileInfoDetails1">
           <label>Email address*</label>
+          <br />
           <br />
           <TextField
             InputProps={{
@@ -125,7 +127,7 @@ function ContactInfo(props) {
                 boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
                 borderRadius: "5px",
                 height: "13px",
-                fontSize: "calc(0.5rem + 0.5vw) !important",
+                fontSize: "16px !important",
               },
             }}
           />
@@ -139,13 +141,14 @@ function ContactInfo(props) {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
-          fontSize: "calc(0.5rem + 0.5vw) !important",
+          fontSize: "16px !important",
         }}
         variant="standard"
         className="ProfileInfoDetails"
       >
         <div style={{ width: "45%" }} className="ProfileInfoDetails1">
           <label>Country</label>
+          <br />
           <br />
           <TextField
             select
@@ -162,7 +165,7 @@ function ContactInfo(props) {
                 borderRadius: "5px",
                 height: "13px !important",
                 width: "100%",
-                fontSize: "calc(0.5rem + 0.5vw) !important",
+                fontSize: "16px !important",
               },
             }}
           >
@@ -211,6 +214,7 @@ function ContactInfo(props) {
         <div style={{ width: "45%" }} className="ProfileInfoDetails1">
           <label>City</label>
           <br />
+          <br />
           <TextField
             style={{ width: "100%" }}
             value={city}
@@ -225,7 +229,7 @@ function ContactInfo(props) {
                 borderRadius: "5px",
                 height: "13px",
                 width: "100%",
-                fontSize: "calc(0.5rem + 0.5vw) !important",
+                fontSize: "16px !important",
               },
             }}
           />
@@ -236,12 +240,13 @@ function ContactInfo(props) {
           width: "-webkit-fill-available",
           padding: "0% 7% 0% 7%",
           marginTop: "5%",
-          fontSize: "calc(0.5rem + 0.5vw) ",
+          fontSize: "14px ",
         }}
         className="ProfileInfoDetails1a"
         variant="standard"
       >
         <label>Street Address*</label>
+        <br />
         <TextField
           value={address}
           style={{ width: "100%" }}
@@ -254,7 +259,7 @@ function ContactInfo(props) {
               boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
               borderRadius: "5px",
               height: "13px",
-              fontSize: "calc(0.5rem + 0.5vw) !important",
+              fontSize: "16px !important",
             },
           }}
           onChange={(e) => setAddress(e.target.value)}
@@ -272,13 +277,13 @@ function ContactInfo(props) {
           onClick={UpdatePersonalInformation}
           variant="contained"
           sx={{
-            width: "20%",
+            width: "90px",
             background: "#359602",
             color: "white",
             height: "45px",
             borderRadius: "5px",
             alignSelf: "center",
-            fontSize: "calc(0.5rem + 0.5vw) !important",
+            fontSize: "16px !important",
             "&:hover": {
               background: "#359602",
             },

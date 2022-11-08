@@ -1,14 +1,18 @@
 import React from "react";
-import { Box, Tab, Tabs } from "@mui/material";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import ZumaDashboard from "../Pages/ZumaDashboard";
-import Home from "../Pages/Home";
-import Apps from "../Pages/Apps";
-import Affiliate from "./Affiliate";
-import { Link } from "react-router-dom";
+import { Box, Button, Tab, Tabs } from "@mui/material";
+import { Link, useLocation } from "react-router-dom";
+import img from "../images/logo.png";
+import { useMediaQuery } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+
 function MainNav() {
   const matches = useMediaQuery("(max-width:435px)");
+  const mobile = useMediaQuery("(max-width:600px)");
   const [value, setValue] = React.useState(0);
+  const [nav, setNav] = React.useState(false);
+  const location = useLocation();
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -48,50 +52,108 @@ function MainNav() {
     };
   }
   return (
-    <Box className="Nav1">
-      <Tabs
-        variant="scrollable"
-        className="TabGrp1"
-        scrollButtons={matches}
-        allowScrollButtonsMobile={matches}
-        value={value}
-        onChange={handleChange}
-        aria-label="nav tabs example"
-      >
-        <Tab
-          className="Tab1"
-          sx={desktop}
-          label="Dashboard"
-          component={Link}
-          to={"/dashboards"}
-        />
-        <Tab
-          component={Link}
-          to={"/affiliate"}
-          className="Tab1"
-          index={1}
-          sx={desktop}
-          label="Affiliate"
-        />
-        <Tab
-          className="Tab1"
-          index={2}
-          sx={desktop}
-          aria-selected="true"
-          component={Link}
-          to={"/apps"}
-          label="Apps"
-        />
-        <Tab
-          component={Link}
-          to={"/profile"}
-          className="Tab1"
-          {...a11yProps(3)}
-          sx={desktop}
-          label="Profile"
-        />
-      </Tabs>
-    </Box>
+    <>
+      <div className="addPadding">
+        {mobile ? (
+          <Box className="MobileContainer">
+            <img src={img} style={{ width: "95px", height: "60px" }} />
+
+            {nav ? (
+              <Button onClick={() => setNav(false)}>
+                <CloseIcon sx={{ color: "#359602", fontSize: "40px" }} />
+              </Button>
+            ) : (
+              <Button onClick={() => setNav(true)}>
+                <MenuIcon sx={{ color: "#359602", fontSize: "40px" }} />
+              </Button>
+            )}
+          </Box>
+        ) : (
+          <Box className="NavContainer">
+            <img src={img} className="NavImage" />
+            <Box className="TabGrp1">
+              <Link
+                to="/dashboards"
+                className={`Tab1 ${
+                  location.pathname === "/dashboards" && "NavActive"
+                }`}
+              >
+                Dashboard
+              </Link>
+              <Link
+                to="/affiliate"
+                className={`Tab01 ${
+                  location.pathname === "/affiliate" && "NavActive"
+                }`}
+              >
+                Affiliate
+              </Link>
+              <Link
+                to="/apps"
+                className={`Tab1 ${
+                  location.pathname === "/apps" && "NavActive"
+                }`}
+              >
+                Apps
+              </Link>
+              <Link
+                to="/profile"
+                className={`Tab01 ${
+                  location.pathname === "/profile" && "NavActive"
+                }`}
+              >
+                Profile
+              </Link>
+            </Box>
+          </Box>
+        )}
+      </div>
+      {nav && (
+        <>
+          <div className="bgTransparent"></div>
+          <Box className="MobileMenu">
+            <Box className="MobileMenuItems">
+              <Link
+                onClick={() => setNav(false)}
+                className={`MMItem ${
+                  location.pathname === "/dashboards" && "MMItemActive"
+                }`}
+                to="/dashboards"
+              >
+                Dashboard
+              </Link>
+              <Link
+                onClick={() => setNav(false)}
+                className={`MMItem1 ${
+                  location.pathname === "/affiliate" && "MMItemActive"
+                }`}
+                to="/affiliate"
+              >
+                Affiliate
+              </Link>
+              <Link
+                onClick={() => setNav(false)}
+                className={`MMItem ${
+                  location.pathname === "/apps" && "MMItemActive"
+                }`}
+                to="/apps"
+              >
+                Apps
+              </Link>
+              <Link
+                onClick={() => setNav(false)}
+                className={`MMItem1 ${
+                  location.pathname === "/profile" && "MMItemActive"
+                }`}
+                to="/profile"
+              >
+                Profile
+              </Link>
+            </Box>
+          </Box>
+        </>
+      )}
+    </>
   );
 }
 

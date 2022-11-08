@@ -41,7 +41,7 @@ function Changepassword(props) {
       <Box
         sx={{
           textAlign: "center",
-          fontSize: "calc(0.9rem + 0.9vw)!important",
+          fontSize: "26px !important",
           borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
           minHeight: "55px",
           backgroundColor: "white",
@@ -60,13 +60,14 @@ function Changepassword(props) {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
-          fontSize: "calc(0.5rem + 0.5vw) !important",
+          fontSize: "16px !important",
         }}
         variant="standard"
         className="ProfileInfoDetails"
       >
         <div style={{ width: "45%" }} className="ProfileInfoDetails1">
-          <label>Confirm new password</label>
+          <label style={{ paddingBottom: "5px" }}>Confirm new password</label>
+          <br />
           <br />
           <TextField
             style={{ width: "100%" }}
@@ -82,14 +83,15 @@ function Changepassword(props) {
                 borderRadius: "5px",
                 height: "13px",
                 width: "100%",
-                fontSize: "calc(0.5rem + 0.5vw) !important",
+                fontSize: "16px !important",
               },
             }}
             onChange={(e) => setPassword1(e.target.value)}
           />
         </div>
         <div style={{ width: "45%" }} className="ProfileInfoDetails1">
-          <label>New Password</label>
+          <label style={{ paddingBottom: "5px" }}>New Password</label>
+          <br />
           <br />
           <TextField
             value={password2}
@@ -103,7 +105,7 @@ function Changepassword(props) {
                 boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
                 borderRadius: "5px",
                 height: "13px",
-                fontSize: "calc(0.5rem + 0.5vw) !important",
+                fontSize: "16px !important",
               },
             }}
             onChange={(e) => setPassword2(e.target.value)}
@@ -122,14 +124,14 @@ function Changepassword(props) {
           onClick={UpdatePersonalInformation}
           variant="contained"
           sx={{
-            width: "30%",
+            width: "150px",
             background: "#359602",
             color: "white",
             height: "45px",
             borderRadius: "5.1px",
             alignSelf: "center",
             textTransform: "none",
-            fontSize: "calc(0.5rem + 0.5vw) !important",
+            fontSize: "16px !important",
             "&:hover": {
               background: "#359602",
             },

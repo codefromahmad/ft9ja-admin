@@ -8,12 +8,16 @@ import TalentBonus from "../Componets/TalentBonus";
 import ProfitSplit from "../Componets/ProfitSplit";
 import DrawdownCalc from "../Componets/DrawdownCalc";
 import CompoundCal from "../Componets/CompoundCal";
+import MainNav from "../Componets/MainNav";
+import { useMediaQuery } from "@mui/material";
+
 function Apps() {
+  const mobile = useMediaQuery("(max-width:600px)");
   return (
     <AccProvider>
       <div>
         <header>
-          <AppsNav />
+          <MainNav />
         </header>
         <br />
         <CssBaseline />

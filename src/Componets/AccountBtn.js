@@ -4,7 +4,7 @@ import AccountsMenu from "./AccountsMenu";
 import ChevronRightSharpIcon from "@mui/icons-material/ChevronRightSharp";
 function AccountBtn() {
   return (
-    <Box className="BtnGrp2">
+    <Box className="BtnGrp2 addPadding">
       <AccountsMenu />
       <Button
         className="GetAccbtn"

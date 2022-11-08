@@ -74,7 +74,7 @@ function DrawdownCalc() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
+                    fontSize: "16px",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -103,8 +103,7 @@ function DrawdownCalc() {
                 onChange={handleChangeFrequency}
                 sx={{
                   "& .MuiInputBase-input": {
-                    // border: "1px solid #ced4da",
-                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
+                    fontSize: "16px",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -135,7 +134,7 @@ function DrawdownCalc() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
+                    fontSize: "16px",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -170,7 +169,7 @@ function DrawdownCalc() {
                 sx={{
                   width: "100%",
                   background: "#359602",
-                  fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
+                  fontSize: "16px",
                   color: "white",
                   height: "45px",
                   borderRadius: "5px",
@@ -198,7 +197,7 @@ function DrawdownCalc() {
                 variant="outlined"
                 sx={{
                   width: "60%",
-                  fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
+                  fontSize: "16px",
                   background: "#1D4353",
                   color: "white",
                   height: "45px",

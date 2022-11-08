@@ -90,6 +90,7 @@ function AccountsMenu() {
             <MenuItem
               onClick={(e) => {
                 handleShowLogin(e);
+                handleClose();
               }}
               key={index}
               value={account}

@@ -43,7 +43,7 @@ function CompoundCal() {
       <Box className="pipcalc__container">
         <Box className="pipcalctexts">
           <h2 className="CompoundingHeader">Compounding Profits Calculator</h2>
-          <p>
+          <p style={{ paddingTop: "20px" }}>
             This calculates how much your money will grow over a period of time.
           </p>
           <br />
@@ -67,7 +67,7 @@ function CompoundCal() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: "calc(0.4rem + 0.4vw + 0.91vh)",
+                    fontSize: "16px",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -96,7 +96,7 @@ function CompoundCal() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
+                    fontSize: "16px",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -121,7 +121,7 @@ function CompoundCal() {
                 sx={{
                   "& .MuiInputBase-input": {
                     // border: "1px solid #ced4da",
-                    fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
+                    fontSize: "16px",
                     width: "100%",
                     padding: "10px 12px",
                     background: "#FEFEFE",
@@ -160,7 +160,7 @@ function CompoundCal() {
                   background: "#359602",
                   color: "white",
                   height: "45px",
-                  fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
+                  fontSize: "16px",
                   borderRadius: "5px",
                   "&:hover": {
                     background: "#359602",
@@ -191,7 +191,7 @@ function CompoundCal() {
                   height: "45px",
                   borderRadius: "5px",
                   alignSelf: "center",
-                  fontSize: "calc(0.4rem + 0.4vw + 0.9vh)",
+                  fontSize: "16px",
                   marginBottom: "15%",
                   "&:hover": {
                     background: "#1D4353",

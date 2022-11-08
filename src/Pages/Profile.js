@@ -7,16 +7,16 @@ import { AccProvider } from "../Context/OtherContext";
 import PersonalInfo from "../Componets/PersonalInfo";
 import ContactInfo from "../Componets/ContactInfo";
 import Changepassword from "../Componets/Changepassword";
+import MainNav from "../Componets/MainNav";
+import { useMediaQuery } from "@mui/material";
 
 function Profile() {
+  const mobile = useMediaQuery("(max-width:600px)");
   return (
     <AccProvider>
-      <div>
         <header>
-          <ProfileNav />
+          <MainNav />
         </header>
-      </div>
-      <br />
       <ProfileAccountDetails />
       <br />
       <PersonalInfo />
