@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NoData = () => {
   return (
@@ -6,7 +7,10 @@ const NoData = () => {
       <p>Dear Trader,</p>
       <p>Welcome to your FT9ja Dashboard.</p>
       <p>
-        If you don’t have an Account yet, you can get one by clicking here link
+        If you don’t have an Account yet, you can get one by clicking here{" "}
+        <Link className="textLink" to="/">
+          Link.
+        </Link>
       </p>
       <p>
         If you already have an Account, select your current account in the My

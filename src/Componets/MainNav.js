@@ -56,8 +56,9 @@ function MainNav() {
       <div className="addPadding">
         {mobile ? (
           <Box className="MobileContainer">
-            <img src={img} style={{ width: "95px", height: "60px" }} />
-
+            <Link className="LogoImage" to="/dashboards">
+              <img src={img} style={{ width: "95px", height: "60px" }} />
+            </Link>
             {nav ? (
               <Button onClick={() => setNav(false)}>
                 <CloseIcon sx={{ color: "#359602", fontSize: "40px" }} />
@@ -70,7 +71,9 @@ function MainNav() {
           </Box>
         ) : (
           <Box className="NavContainer">
-            <img src={img} className="NavImage" />
+            <Link className="LogoImage" to="/dashboards">
+              <img src={img} className="NavImage" />
+            </Link>
             <Box className="TabGrp1">
               <Link
                 to="/dashboards"

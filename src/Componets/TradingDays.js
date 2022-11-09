@@ -26,7 +26,7 @@ function TradingDays() {
   }, [showlogin]);
 
   return (
-    <div style={{ margin: "6% 1% 0% 0%" }}>
+    <div style={{ margin: "7% 0% 0% 0%" }}>
       <CalendarHeatmap
         startDate={new Date("2021-12-31")}
         endDate={new Date("2022-12-31")}

@@ -69,6 +69,19 @@ input[type="date"] {
   background-color: #fafafa;
 }
 
+.LogoImage:hover {
+  background: #fafafa !important;
+}
+
+.textLink {
+  color: black;
+}
+
+.textLink:hover {
+  background: white !important;
+  color: black;
+}
+
 .MobileContainer {
   display: flex;
   align-items: center;
@@ -1467,7 +1480,7 @@ h4 {
     border-left: none;
     width: 100%;
     margin-bottom: 10%;
-    font-size: calc(2.9vw + 0.9vh + 1.1vmin) !important;
+    font-size: 14px !important;
   }
   .PayoutBoxlink1 {
     line-height: calc(1.4rem + 0.5vw);
