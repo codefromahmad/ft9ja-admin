@@ -83,7 +83,7 @@ function Home() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
             tellus cras arcu in. Nec enim mus suscipit vestibulum.
           </h6>
-          <div id="table">
+          <div id="table" className="">
             <LandingTable />
           </div>
         </Box>

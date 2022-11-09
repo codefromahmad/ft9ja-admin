@@ -1,5 +1,5 @@
-import React from "react";
-import { Box, Button, Tab, Tabs } from "@mui/material";
+import React, { useEffect } from "react";
+import { Box, Button } from "@mui/material";
 import { Link, useLocation } from "react-router-dom";
 import img from "../images/logo.png";
 import { useMediaQuery } from "@mui/material";
@@ -7,15 +7,19 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
 function MainNav() {
-  const matches = useMediaQuery("(max-width:435px)");
   const mobile = useMediaQuery("(max-width:600px)");
-  const [value, setValue] = React.useState(0);
   const [nav, setNav] = React.useState(false);
   const location = useLocation();
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+  useEffect(() => {
+    if (nav === true) {
+      document.body.style.overflow = "hidden";
+    }
+    if (nav === false) {
+      document.body.style.overflow = "";
+    }
+  }, [nav]);
+
   const desktop = {
     fontWeight: "494",
     borderRadius: "5px",

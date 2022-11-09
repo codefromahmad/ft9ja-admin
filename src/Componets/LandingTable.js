@@ -54,7 +54,7 @@ function LandingTable() {
         <MuiAccordionSummary
           aria-controls="panel1d-content"
           id="panel1d-header"
-          sx={{ backgroundColor: "#F7FDF8" }}
+          sx={{ backgroundColor: "#93fa9f" }}
         >
           <Typography
             sx={{
@@ -90,7 +90,6 @@ function LandingTable() {
               flexShrink: 0,
               alignSelf: "center",
             }}
-            // className="accordion__text"
           >
             Evaluation
           </Typography>
@@ -98,6 +97,7 @@ function LandingTable() {
             sx={{
               width: "33%",
               flexShrink: 0,
+              padding: "0px 5px",
               color: "text.secondary",
             }}
           >
@@ -124,7 +124,7 @@ function LandingTable() {
         onChange={handleChange("panel2")}
       >
         <AccordionSummary
-          sx={{ backgroundColor: "#F7FDF8" }}
+          sx={{ backgroundColor: "#93fa9f" }}
           aria-controls="panel2d-content"
           id="panel2d-header"
         >
@@ -133,17 +133,15 @@ function LandingTable() {
           </Typography>
           <Typography
             sx={{
-              color: "text.secondary",
               width: "33%",
               flexShrink: 0,
+              padding: "0px 5px",
             }}
           >
             Up to 80%
           </Typography>
           <Typography
             sx={{
-              color: "text.secondary",
-
               flexShrink: 0,
             }}
           >
@@ -177,6 +175,7 @@ function LandingTable() {
               color: "text.secondary",
               width: "33%",
               flexShrink: 0,
+              padding: "0px 5px",
             }}
           >
             Up to 10%
@@ -206,7 +205,7 @@ function LandingTable() {
         onChange={handleChange("panel4")}
       >
         <AccordionSummary
-          sx={{ backgroundColor: "#F7FDF8" }}
+          sx={{ backgroundColor: "#93fa9f" }}
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
@@ -221,14 +220,14 @@ function LandingTable() {
           </Typography>
           <Typography
             sx={{
-              color: "text.secondary",
               width: "33%",
               flexShrink: 0,
+              padding: "0px 5px",
             }}
           >
             No time limit
           </Typography>
-          <Typography sx={{ color: "text.secondary" }}>
+          <Typography sx={{}}>
             Challenge: 1 month <br />
             Verification: 2 months
           </Typography>
@@ -254,7 +253,12 @@ function LandingTable() {
             Free 2nd Chance Account
           </Typography>
           <Typography
-            sx={{ color: "text.secondary", width: "33%", flexShrink: 0 }}
+            sx={{
+              color: "text.secondary",
+              width: "33%",
+              padding: "0px 5px",
+              flexShrink: 0,
+            }}
           >
             Yes
           </Typography>
@@ -273,19 +277,15 @@ function LandingTable() {
         onChange={handleChange("panel6")}
       >
         <AccordionSummary
-          sx={{ backgroundColor: "#F7FDF8" }}
+          sx={{ backgroundColor: "#93fa9f" }}
           aria-controls="panel6bh-content"
           id="panel6bh-header"
         >
           <Typography sx={{ width: "33%", flexShrink: 0 }}>Brokers</Typography>
-          <Typography
-            sx={{ color: "text.secondary", width: "33%", flexShrink: 0 }}
-          >
+          <Typography sx={{ width: "33%", padding: "0px 5px", flexShrink: 0 }}>
             ICMarkets, FXTM,Deriv
           </Typography>
-          <Typography
-            sx={{ color: "text.secondary", width: "33%", flexShrink: 0 }}
-          >
+          <Typography sx={{ width: "33%", flexShrink: 0 }}>
             ICMarkets, FXTM
           </Typography>
         </AccordionSummary>
@@ -310,7 +310,12 @@ function LandingTable() {
             Payout Frequency
           </Typography>
           <Typography
-            sx={{ color: "text.secondary", width: "33%", flexShrink: 0 }}
+            sx={{
+              color: "text.secondary",
+              padding: "0px 5px",
+              width: "33%",
+              flexShrink: 0,
+            }}
           >
             Weekly or Monthly
           </Typography>
@@ -333,23 +338,17 @@ function LandingTable() {
         onChange={handleChange("panel8")}
       >
         <AccordionSummary
-          sx={{ backgroundColor: "#F7FDF8" }}
+          sx={{ backgroundColor: "#93fa9f" }}
           aria-controls="panel8bh-content"
           id="panel8bh-header"
         >
           <Typography sx={{ width: "33%", flexShrink: 0 }}>
             Daily Drawdown
           </Typography>
-          <Typography
-            sx={{ color: "text.secondary", width: "33%", flexShrink: 0 }}
-          >
+          <Typography sx={{ width: "33%", padding: "0px 5px", flexShrink: 0 }}>
             5%
           </Typography>
-          <Typography
-            sx={{ color: "text.secondary", width: "33%", flexShrink: 0 }}
-          >
-            5%
-          </Typography>
+          <Typography sx={{ width: "33%", flexShrink: 0 }}>5%</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -372,7 +371,12 @@ function LandingTable() {
             Account Drawdown
           </Typography>
           <Typography
-            sx={{ color: "text.secondary", width: "33%", flexShrink: 0 }}
+            sx={{
+              color: "text.secondary",
+              padding: "0px 5px",
+              width: "33%",
+              flexShrink: 0,
+            }}
           >
             10%
           </Typography>
@@ -397,7 +401,7 @@ function LandingTable() {
         <AccordionSummary
           aria-controls="panel10bh-content"
           id="panel10bh-header"
-          sx={{ backgroundColor: "#F7FDF8" }}
+          sx={{ backgroundColor: "#93fa9f", display: "flex", gap: "5px" }}
         >
           <Typography
             sx={{
@@ -409,15 +413,11 @@ function LandingTable() {
           >
             Minimum Trading days
           </Typography>
-          <Typography
-            sx={{ color: "text.secondary", width: "33%", flexShrink: 0 }}
-          >
+          <Typography sx={{ width: "33%", padding: "0px 5px", flexShrink: 0 }}>
             10 days
             <li>Minimum of 2 days per week</li>
           </Typography>
-          <Typography
-            sx={{ color: "text.secondary", width: "33%", flexShrink: 0 }}
-          >
+          <Typography sx={{ width: "33%", flexShrink: 0 }}>
             6days in each phase
             <li>Minimum of 2 days per week</li>
           </Typography>
