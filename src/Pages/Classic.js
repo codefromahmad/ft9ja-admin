@@ -37,15 +37,6 @@ function Classic() {
 
   return (
     <Box>
-      {/* {token ? (
-        <div style={{ float: "right" }}>
-          <a href="/dashboards">Dashboard</a>
-        </div>
-      ) : (
-        <div style={{ float: "right" }}>
-          <a href="/login">Login</a>
-        </div>
-      )} */}
       <Box className="Landing">
       <Box sx={{
           paddingY:2,
