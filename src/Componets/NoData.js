@@ -7,9 +7,9 @@ const NoData = () => {
       <p>Dear Trader,</p>
       <p>Welcome to your FT9ja Dashboard.</p>
       <p>
-        If you don’t have an Account yet, you can get one by clicking here{" "}
+        If you don’t have an Account yet, you can get one by clicking{" "}
         <Link className="textLink" to="/">
-          Link.
+          here.
         </Link>
       </p>
       <p>
