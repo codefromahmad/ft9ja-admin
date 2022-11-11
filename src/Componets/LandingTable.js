@@ -54,7 +54,7 @@ function LandingTable() {
         <MuiAccordionSummary
           aria-controls="panel1d-content"
           id="panel1d-header"
-          sx={{ backgroundColor: "#93fa9f" }}
+          sx={{ backgroundColor: "#a3a3a3" }}
         >
           <Typography
             sx={{
@@ -124,7 +124,7 @@ function LandingTable() {
         onChange={handleChange("panel2")}
       >
         <AccordionSummary
-          sx={{ backgroundColor: "#93fa9f" }}
+          sx={{ backgroundColor: "#a3a3a3" }}
           aria-controls="panel2d-content"
           id="panel2d-header"
         >
@@ -205,7 +205,7 @@ function LandingTable() {
         onChange={handleChange("panel4")}
       >
         <AccordionSummary
-          sx={{ backgroundColor: "#93fa9f" }}
+          sx={{ backgroundColor: "#a3a3a3" }}
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
@@ -277,7 +277,7 @@ function LandingTable() {
         onChange={handleChange("panel6")}
       >
         <AccordionSummary
-          sx={{ backgroundColor: "#93fa9f" }}
+          sx={{ backgroundColor: "#a3a3a3" }}
           aria-controls="panel6bh-content"
           id="panel6bh-header"
         >
@@ -338,7 +338,7 @@ function LandingTable() {
         onChange={handleChange("panel8")}
       >
         <AccordionSummary
-          sx={{ backgroundColor: "#93fa9f" }}
+          sx={{ backgroundColor: "#a3a3a3" }}
           aria-controls="panel8bh-content"
           id="panel8bh-header"
         >
@@ -401,7 +401,7 @@ function LandingTable() {
         <AccordionSummary
           aria-controls="panel10bh-content"
           id="panel10bh-header"
-          sx={{ backgroundColor: "#93fa9f", display: "flex", gap: "5px" }}
+          sx={{ backgroundColor: "#a3a3a3", display: "flex", gap: "5px" }}
         >
           <Typography
             sx={{
@@ -433,7 +433,11 @@ function LandingTable() {
         <MuiAccordionSummary
           aria-controls="panel1d-content"
           id="panel1d-header"
-          sx={{ backgroundColor: "#FCFFFA" }}
+          sx={{
+            backgroundColor: "#FCFFFA",
+            display: "flex",
+            justifyContent: "space-between",
+          }}
         >
           <Typography
             sx={{
@@ -445,13 +449,8 @@ function LandingTable() {
           <Typography
             variant="h5"
             sx={{
-              marginRight: {
-                xs: "8%",
-                sm: "13%",
-              },
-              flexShrink: 0,
+              width: "33%",
               color: "#1B1A1A",
-              fontSize: "140%",
             }}
             className="accordion_grp_btn"
           >
@@ -460,6 +459,7 @@ function LandingTable() {
               variant="contained"
               className="accordion__btn"
               sx={{
+                width: "100%",
                 " &:hover": {
                   backgroundColor: "#359602",
                 },
@@ -468,12 +468,13 @@ function LandingTable() {
               Select Classic
             </Button>
           </Typography>
-          <Typography variant="h5" sx={{ color: "#1B1A1A", fontSize: "140%" }}>
+          <Typography variant="h5" sx={{ color: "#1B1A1A", width: "33%" }}>
             <Button
               className="accordion__btn"
               href="/challenge"
               variant="contained"
               sx={{
+                width: "100%",
                 " &:hover": {
                   backgroundColor: "#359602",
                 },
