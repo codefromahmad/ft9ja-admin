@@ -68,6 +68,7 @@ function Register() {
         margin={"auto"}
         bgcolor={"white"}
         sx={{
+          // marginTop: "10px",
           "& > :not(style)": { m: 1 },
         }}
       >
