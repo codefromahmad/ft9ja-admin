@@ -18,7 +18,7 @@ function ChallengeCarousel(props) {
       });
   }, []);
   return (
-    <Carousel
+    his.length > 0 && <Carousel
       sx={{ width: "90%", marginLeft: "auto", marginRight: "auto" }}
       swipeable={false}
       draggable={false}
