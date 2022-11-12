@@ -26,7 +26,7 @@ function AffiliateHIW() {
       <Box
         sx={{
           textAlign: "center",
-          fontSize: "calc(1.9vw + 0.7vh + .1vmin)",
+          fontSize: "28px",
         }}
         className="HIWheader"
       >
@@ -78,7 +78,7 @@ function AffiliateHIW() {
             width: "50%",
             marginLeft: "9px",
             fontWeight: 375,
-            fontSize: "calc(0.8vw + 1.1vmin)",
+            fontSize: "16px",
           }}
           className="HIWvideoText"
         >

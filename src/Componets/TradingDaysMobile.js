@@ -59,7 +59,7 @@ function TradingDays() {
     >
       {calendarDatesArray.map((date, index) => (
         // <Grid item xs={9} key={index}>
-        <div style={{ margin: "6% 9% 0% 0%" }}>
+        <div style={{ margin: "6% 25% 0% 25%" }}>
           <CalendarHeatmap
             showWeekdayLabels={true}
             startDate={date.start}

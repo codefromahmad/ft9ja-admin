@@ -77,7 +77,7 @@ function DailyDD() {
       }}
     >
       {calendarDatesArray.map((date, index) => (
-        <div key={index} style={{ margin: "6% 1% 0% 0%" }}>
+        <div key={index} style={{ margin: "6% 25% 0% 25%" }}>
           <dialog
             onClick={() => {
               setOpen(false);

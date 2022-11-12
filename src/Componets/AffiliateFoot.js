@@ -6,6 +6,7 @@ function AffiliateFoot() {
     <div
       style={{
         border: " 1px solid rgba(0, 0, 0, 0.8)",
+        borderRadius: "10px",
         width: "70%",
         height: "256px",
         display: "flex",
@@ -13,13 +14,14 @@ function AffiliateFoot() {
         alignItems: "center",
         marginLeft: "auto",
         marginRight: "auto",
+        padding: "0px 25px",
       }}
       className="AffiliateFoot"
     >
       <div>
         <p
           className="AffiliateFootp"
-          style={{ width: "100%", fontSize: "calc(0.9vw + 1.1vmin)" }}
+          style={{ width: "100%", fontSize: "16px" }}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
         </p>

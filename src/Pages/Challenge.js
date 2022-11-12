@@ -37,16 +37,48 @@ function Challenge() {
 
   return (
     <Box>
-      {token ? (
-        <div style={{ float: "right" }}>
-          <a href="/dashboards">Dashboard</a>
-        </div>
-      ) : (
-        <div style={{ float: "right" }}>
-          <a href="/login">Login</a>
-        </div>
-      )}
       <Box className="Landing">
+      <Box sx={{
+          paddingY:2,
+          paddingLeft:1,
+        }}>
+          {token ? (
+            <Button
+              className="Btn"
+              sx={{
+                position: "absolute",
+                float: "right",
+                fontSize: 18,
+                textTransform: "none",
+                background: "#359602",
+                " &:hover": {
+                  backgroundColor: "#359602",
+                },
+              }}
+              variant="contained"
+              href="/dashboards"
+            >
+              Dashboard
+            </Button>
+          ) : (
+            <Button
+              className="Btn"
+              sx={{
+                float: "right",
+                fontSize: 18,
+                textTransform: "none",
+                background: "#359602",
+                " &:hover": {
+                  backgroundColor: "#359602",
+                },
+              }}
+              variant="contained"
+              href="/login"
+            >
+              Login
+            </Button>
+          )}
+        </Box>
         <Box className="Landingheader">
           <h1>A Big Title</h1>
           <p className="landp">
@@ -75,7 +107,10 @@ function Challenge() {
           <Box
             sx={{
               width: "100%",
-              height: "191px",
+              paddingY:{
+                xs:2,
+                lg:5,
+              },
               borderTop: "1px solid #E5E5E5",
               borderBottom: "1px solid #E5E5E5",
             }}
@@ -92,6 +127,10 @@ function Challenge() {
                   }}
                   variant="contained"
                   sx={{
+                    fontSize: {
+                      xs: 24,
+                      md: 30,
+                    },
                     background: size === "3000" ? "#359602" : "#3596021a",
                     color: size === "3000" ? "#fff" : "#000",
                   }}
@@ -211,6 +250,9 @@ function Challenge() {
                     setPayout("Monthly");
                   }}
                   sx={{
+                    fontSize:{
+
+                    },
                     background: payout === "Monthly" ? "#359602" : "#3596021a",
                     color: payout === "Monthly" ? "#fff" : "#000",
                   }}

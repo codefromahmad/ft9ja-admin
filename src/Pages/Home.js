@@ -6,17 +6,54 @@ function Home() {
   const token = localStorage.getItem("access_token");
   return (
     <Box>
-      {token ? (
-        <div style={{ float: "right" }}>
-          <a href="/dashboards">Dashboard</a>
-        </div>
-      ) : (
-        <div style={{ float: "right" }}>
-          <a href="/login">Login</a>
-        </div>
-      )}
       <Box className="Landing">
-        <Box className="Landingheader">
+        <Box sx={{
+          paddingY:2,
+          paddingLeft:1,
+        }}>
+          {token ? (
+            <Button
+              className="Btn"
+              sx={{
+                position: "absolute",
+                float: "right",
+                fontSize: 18,
+                textTransform: "none",
+                background: "#359602",
+                " &:hover": {
+                  backgroundColor: "#359602",
+                },
+              }}
+              variant="contained"
+              href="/dashboards"
+            >
+              Dashboard
+            </Button>
+          ) : (
+            <Button
+              className="Btn"
+              sx={{
+                float: "right",
+                fontSize: 18,
+                textTransform: "none",
+                background: "#359602",
+                " &:hover": {
+                  backgroundColor: "#359602",
+                },
+              }}
+              variant="contained"
+              href="/login"
+            >
+              Login
+            </Button>
+          )}
+        </Box>
+        <Box
+          sx={{
+            fontSize: 20,
+          }}
+          className="Landingheader"
+        >
           <h1>A Big Title</h1>
           <p className="landp">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
@@ -25,6 +62,7 @@ function Home() {
           <Button
             className="landbtn"
             sx={{
+              fontSize: 20,
               textTransform: "none",
               background: "#359602",
               " &:hover": {
@@ -38,7 +76,6 @@ function Home() {
           </Button>
         </Box>
         <br />
-        <br />
         <LandingCarousel />
         <br />
         <Box className="Landingheader">
@@ -46,7 +83,7 @@ function Home() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
             tellus cras arcu in. Nec enim mus suscipit vestibulum.
           </h6>
-          <div id="table">
+          <div id="table" className="">
             <LandingTable />
           </div>
         </Box>

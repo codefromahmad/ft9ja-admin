@@ -47,11 +47,8 @@ function App() {
         <AuthProvider>
           <Routes>
             <Route path="/" element={<Home />} />
-
             <Route path="/dashboards" element={<ZumaDashboard />} />
-
             <Route path="/apps" element={<Apps />} />
-
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/linetest" element={<ReBar />} />

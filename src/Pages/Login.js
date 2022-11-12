@@ -2,12 +2,12 @@ import React, { useContext } from "react";
 import {
   Box,
   Button,
-  OutlinedInput,
   InputLabel,
   FormControl,
   Typography,
   FormHelperText,
   CircularProgress,
+  TextField,
 } from "@mui/material";
 import { useNavigate, Link } from "react-router-dom";
 import axios from "../axios";
@@ -27,29 +27,25 @@ function Login() {
   // const [loadingspin, setLoadingspin] = React.useState(false);
 
   return (
-    <div>
-      <Box component="form" onSubmit={handleuserLogin}>
+    <div className="LoginBox">
+      <Box className="LoginForum" component="form" onSubmit={handleuserLogin}>
+        <h1>Login</h1>
         <FormControl margin={"normal"}>
-          <InputLabel htmlFor="component-outlined">Email</InputLabel>
-          <OutlinedInput
+          {/* <InputLabel htmlFor="component-outlined">Email</InputLabel> */}
+          <TextField
             type={"email"}
-            // labelText={"Email" }
+            label={"Email"}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             name={"email"}
-            sx={{
-              height: 50,
-            }}
           />
         </FormControl>
 
         <FormControl margin={"normal"}>
-          <InputLabel htmlFor="component-outlined">Password</InputLabel>
-          <OutlinedInput
+          {/* <InputLabel htmlFor="component-outlined">Password</InputLabel> */}
+          <TextField
             type={"password"}
-            sx={{
-              height: 50,
-            }}
+            label={"Password"}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             name={"password"}
@@ -57,7 +53,7 @@ function Login() {
         </FormControl>
 
         <Button
-          style={{ marginTop: "30px" }}
+          style={{ marginTop: "15px", marginBottom: "5px", color: "white" }}
           variant="contained"
           type={"submit"}
           onClick={() => setLoading(true)}
@@ -79,8 +75,11 @@ function Login() {
           {error ? error : null}
         </FormHelperText>
 
-        <Typography variant="body2" color="error">
-          Dont have an account? <Link to="/register">Register</Link>
+        <Typography variant="body2" sx={{ textAlign: "center" }} color="error">
+          Dont have an account?{" "}
+          <Link className="loginBtn" to="/register">
+            Register
+          </Link>
         </Typography>
       </Box>
     </div>

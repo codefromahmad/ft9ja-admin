@@ -20,7 +20,7 @@ function ZumaDashboard() {
         <Box>
           <Box
             sx={{ display: "flex", flexWrap: "nowrap", width: "100%" }}
-            className="dashmain"
+            className="dashmain addPadding"
           >
             <Accounts />
             <AccountDetails />

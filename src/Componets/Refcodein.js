@@ -35,15 +35,12 @@ function Refcodein() {
         className="Refcodefield"
         sx={{
           "& .MuiInputBase-input": {
-            // border: "1px solid #ced4da",
-
             background: "#FFFFFF",
-
             border: "0.5px solid rgba(0, 0, 0, 0.2)",
             boxShadow: "inset 0px 0px 2px rgba(0, 0, 0, 0.25)",
             borderRadius: "5px",
             height: "13px",
-            fontSize: "calc(0.6vw + .9vh + .9vmin)",
+            fontSize: "14px",
           },
         }}
       />

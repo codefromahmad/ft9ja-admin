@@ -37,16 +37,48 @@ function Classic() {
 
   return (
     <Box>
-      {token ? (
-        <div style={{ float: "right" }}>
-          <a href="/dashboards">Dashboard</a>
-        </div>
-      ) : (
-        <div style={{ float: "right" }}>
-          <a href="/login">Login</a>
-        </div>
-      )}
       <Box className="Landing">
+      <Box sx={{
+          paddingY:2,
+          paddingLeft:1,
+        }}>
+          {token ? (
+            <Button
+              className="Btn"
+              sx={{
+                position: "absolute",
+                float: "right",
+                fontSize: 18,
+                textTransform: "none",
+                background: "#359602",
+                " &:hover": {
+                  backgroundColor: "#359602",
+                },
+              }}
+              variant="contained"
+              href="/dashboards"
+            >
+              Dashboard
+            </Button>
+          ) : (
+            <Button
+              className="Btn"
+              sx={{
+                float: "right",
+                fontSize: 18,
+                textTransform: "none",
+                background: "#359602",
+                " &:hover": {
+                  backgroundColor: "#359602",
+                },
+              }}
+              variant="contained"
+              href="/login"
+            >
+              Login
+            </Button>
+          )}
+        </Box>
         <Box className="Landingheader">
           <h1>A Big Title</h1>
           <p className="landp">
