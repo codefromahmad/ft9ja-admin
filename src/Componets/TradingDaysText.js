@@ -1,13 +1,16 @@
-import { Typography } from '@mui/material'
-import React from 'react'
+import { Typography } from "@mui/material";
+import React from "react";
 
 function TradingDaysText() {
   return (
     <div>
-       <Typography> Here are the amount of days you have traded</Typography>
-       <Typography> The Gradient shows the effort per day</Typography>
+      <Typography> Your Daily Trading Days calendar</Typography>
+      <Typography>
+        {" "}
+        Each box represents a day. Each green box represents a day you've traded
+      </Typography>
     </div>
-  )
+  );
 }
 
-export default TradingDaysText
+export default TradingDaysText;

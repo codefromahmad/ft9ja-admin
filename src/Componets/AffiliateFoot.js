@@ -23,7 +23,8 @@ function AffiliateFoot() {
           className="AffiliateFootp"
           style={{ width: "100%", fontSize: "16px" }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+          Top Affiliates Earn up to N500,000 Monthly. Want to learn how? Become
+          an FT9ja Hero. FT9ja Hero is FT9ja Ambassador Program.{" "}
         </p>
         <Button
           sx={{
@@ -38,7 +39,7 @@ function AffiliateFoot() {
           }}
           variant={"outlined"}
         >
-          Download
+          Learn More
         </Button>
       </div>
       <div

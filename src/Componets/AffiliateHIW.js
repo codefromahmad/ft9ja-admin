@@ -83,22 +83,18 @@ function AffiliateHIW() {
           className="HIWvideoText"
         >
           <ol>
+            <li> Get your unique referral code. </li>
+            <br />
             <li>
               {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              pretium ut proin egestas morbi vitae massa.{" "}
+              Share it with people you want to refer. They should enter the code
+              when then register on our website.{" "}
             </li>
             <br />
             <li>
               {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              pretium ut proin egestas morbi vitae massa.{" "}
-            </li>
-            <br />
-            <li>
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              pretium ut proin egestas morbi vitae massa.{" "}
+              You will be paid a 10% referral commision when they purchase an
+              account.{" "}
             </li>
           </ol>
         </Box>

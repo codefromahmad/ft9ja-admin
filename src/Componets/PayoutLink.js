@@ -39,9 +39,12 @@ function PayoutLink() {
         variant="outlined"
         className="Payoutbtn"
         sx={{
+          color: "white",
+          cursor: "pointer",
           backgroundColor: "#359602",
           "&:hover": {
             backgroundColor: "#359602",
+            cursor: "pointer",
           },
         }}
         endIcon={
@@ -67,9 +70,18 @@ function PayoutLink() {
       />
       <Box className="PayoutBoxlink">
         <ol>
-          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-          <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+          <li> Payouts are processed on Fridays. </li>
+          <li>
+            {" "}
+            Only request made before 2PM WAT on Friday will be processed that
+            week.{" "}
+          </li>
+          <li>
+            {" "}
+            Payouts will be sent within 24 working hours (after 2PM WAT on
+            Friday).{" "}
+          </li>
+          <li> Remember to close all trades before requesting for payouts. </li>
         </ol>
       </Box>
     </div>

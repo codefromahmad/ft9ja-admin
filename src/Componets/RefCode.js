@@ -129,9 +129,13 @@ function RefCode() {
               }}
               className="AffiText"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus sed
-              lacus, tellus sed lacinia sem sagittis, justo, varius. Nisi
-              suspendisse molestie dui ultrices bibendum duis donec.
+              Boost your earnings with our Affiliate Program. Banked Payout is
+              the amount you have earned for referring Traders that have gone
+              ahead to purchase an account. Potential Payout is the amount you
+              will earn if the rest of the Traders you referred go ahead to
+              purchase an account. <br />
+              You are leaving money on the table! Follow up with your referees
+              to get an account today.
             </p>
           </Box>
         </Box>

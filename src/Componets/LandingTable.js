@@ -42,7 +42,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
 function LandingTable() {
-  const [expanded, setExpanded] = React.useState("panel1");
+  const [expanded, setExpanded] = React.useState("");
 
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
@@ -73,8 +73,8 @@ function LandingTable() {
       </Accordion>
       <Accordion
         sx={{ border: "none" }}
-        expanded={expanded === "panel1"}
-        onChange={handleChange("panel1")}
+        // expanded={expanded === "panel1"}
+        // onChange={handleChange("panel1")}
       >
         <AccordionSummary
           sx={{
@@ -120,8 +120,9 @@ function LandingTable() {
       </Accordion>
       <Accordion
         sx={{ border: "none" }}
-        expanded={expanded === "panel2"}
-        onChange={handleChange("panel2")}
+
+        // expanded={expanded === "panel2"}
+        // onChange={handleChange("panel2")}
       >
         <AccordionSummary
           sx={{ backgroundColor: "#a3a3a3" }}
@@ -159,8 +160,9 @@ function LandingTable() {
       </Accordion>
       <Accordion
         sx={{ border: "none" }}
-        expanded={expanded === "panel3"}
-        onChange={handleChange("panel3")}
+
+        // expanded={expanded === "panel3"}
+        // onChange={handleChange("panel3")}
       >
         <AccordionSummary
           sx={{ backgroundColor: "#FCFFFA" }}
@@ -201,8 +203,9 @@ function LandingTable() {
       </Accordion>
       <Accordion
         sx={{ border: "none" }}
-        expanded={expanded === "panel4"}
-        onChange={handleChange("panel4")}
+
+        // expanded={expanded === "panel4"}
+        // onChange={handleChange("panel4")}
       >
         <AccordionSummary
           sx={{ backgroundColor: "#a3a3a3" }}
@@ -241,8 +244,9 @@ function LandingTable() {
       </Accordion>
       <Accordion
         sx={{ border: "none" }}
-        expanded={expanded === "panel5"}
-        onChange={handleChange("panel5")}
+
+        // expanded={expanded === "panel5"}
+        // onChange={handleChange("panel5")}
       >
         <AccordionSummary
           sx={{ backgroundColor: "#FCFFFA" }}
@@ -273,8 +277,9 @@ function LandingTable() {
       </Accordion>
       <Accordion
         sx={{ border: "none" }}
-        expanded={expanded === "panel6"}
-        onChange={handleChange("panel6")}
+
+        // expanded={expanded === "panel6"}
+        // onChange={handleChange("panel6")}
       >
         <AccordionSummary
           sx={{ backgroundColor: "#a3a3a3" }}
@@ -298,8 +303,9 @@ function LandingTable() {
       </Accordion>
       <Accordion
         sx={{ border: "none" }}
-        expanded={expanded === "panel7"}
-        onChange={handleChange("panel7")}
+
+        // expanded={expanded === "panel7"}
+        // onChange={handleChange("panel7")}
       >
         <AccordionSummary
           sx={{ backgroundColor: "#FCFFFA" }}
@@ -334,8 +340,9 @@ function LandingTable() {
       </Accordion>
       <Accordion
         sx={{ border: "none" }}
-        expanded={expanded === "panel8"}
-        onChange={handleChange("panel8")}
+
+        // expanded={expanded === "panel8"}
+        // onChange={handleChange("panel8")}
       >
         <AccordionSummary
           sx={{ backgroundColor: "#a3a3a3" }}
@@ -359,8 +366,9 @@ function LandingTable() {
       </Accordion>
       <Accordion
         sx={{ border: "none" }}
-        expanded={expanded === "panel9"}
-        onChange={handleChange("panel9")}
+
+        // expanded={expanded === "panel9"}
+        // onChange={handleChange("panel9")}
       >
         <AccordionSummary
           sx={{ backgroundColor: "#FCFFFA" }}
@@ -395,8 +403,9 @@ function LandingTable() {
       </Accordion>
       <Accordion
         sx={{ border: "none" }}
-        expanded={expanded === "panel10"}
-        onChange={handleChange("panel10")}
+
+        // expanded={expanded === "panel10"}
+        // onChange={handleChange("panel10")}
       >
         <AccordionSummary
           aria-controls="panel10bh-content"

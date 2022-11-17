@@ -7,10 +7,12 @@ function Home() {
   return (
     <Box>
       <Box className="Landing">
-        <Box sx={{
-          paddingY:2,
-          paddingLeft:1,
-        }}>
+        <Box
+          sx={{
+            paddingY: 2,
+            paddingLeft: 1,
+          }}
+        >
           {token ? (
             <Button
               className="Btn"
@@ -54,10 +56,9 @@ function Home() {
           }}
           className="Landingheader"
         >
-          <h1>A Big Title</h1>
+          <h1>Trade up to $50,000</h1>
           <p className="landp">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
-            varius eu diam et a venenatis quis. Gravida quis risus quam platea
+            Get the Account Size required to become a successful Trader
           </p>
           <Button
             className="landbtn"
@@ -80,8 +81,8 @@ function Home() {
         <br />
         <Box className="Landingheader">
           <h6>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
-            tellus cras arcu in. Nec enim mus suscipit vestibulum.
+            Thousands of Traders love trading with FT9ja Prop Firm. Here are
+            some of their stories.
           </h6>
           <div id="table" className="">
             <LandingTable />
