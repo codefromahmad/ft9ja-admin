@@ -27,6 +27,7 @@ function AffiliateHIW() {
         sx={{
           textAlign: "center",
           fontSize: "28px",
+          fontWeight: "bold",
         }}
         className="HIWheader"
       >

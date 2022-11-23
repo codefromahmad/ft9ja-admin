@@ -52,7 +52,7 @@ function Home() {
         </Box>
         <Box
           sx={{
-            fontSize: 20,
+            fontSize: 15,
           }}
           className="Landingheader"
         >

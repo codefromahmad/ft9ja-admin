@@ -133,7 +133,7 @@ function RefCode() {
               the amount you have earned for referring Traders that have gone
               ahead to purchase an account. Potential Payout is the amount you
               will earn if the rest of the Traders you referred go ahead to
-              purchase an account. <br />
+              purchase an account. <br /> <br />
               You are leaving money on the table! Follow up with your referees
               to get an account today.
             </p>

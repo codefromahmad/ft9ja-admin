@@ -21,14 +21,14 @@ function AffiliateFoot() {
       <div>
         <p
           className="AffiliateFootp"
-          style={{ width: "100%", fontSize: "16px" }}
+          style={{ width: "80%", fontSize: "16px", fontWeight: "bold" }}
         >
           Top Affiliates Earn up to N500,000 Monthly. Want to learn how? Become
           an FT9ja Hero. FT9ja Hero is FT9ja Ambassador Program.{" "}
         </p>
         <Button
           sx={{
-            width: "50%",
+            width: "35%",
             background: "#359602",
             color: "white",
             height: "45px",

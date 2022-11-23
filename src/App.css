@@ -1193,7 +1193,7 @@ h4 {
   text-align: center;
   font-style: normal;
   font-weight: 700;
-  font-size: calc(3.5vw + 2.5vh + 1.5vmin);
+  font-size: calc(3.3vw + 2.3vh + 1.3vmin);
   line-height: 59px;
   color: rgba(0, 0, 0, 0.9);
 }

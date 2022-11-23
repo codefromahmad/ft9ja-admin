@@ -54,7 +54,7 @@ function LandingTable() {
         <MuiAccordionSummary
           aria-controls="panel1d-content"
           id="panel1d-header"
-          sx={{ backgroundColor: "#a3a3a3" }}
+          sx={{ backgroundColor: "#000000" }}
         >
           <Typography
             sx={{
@@ -63,10 +63,18 @@ function LandingTable() {
               flexShrink: 0,
             }}
           ></Typography>
-          <Typography variant="h5" className="accordion__heading">
+          <Typography
+            sx={{ color: "white" }}
+            variant="h5"
+            className="accordion__heading"
+          >
             FT9ja Classic
           </Typography>
-          <Typography variant="h5" className="accordion__heading">
+          <Typography
+            sx={{ color: "white" }}
+            variant="h5"
+            className="accordion__heading"
+          >
             FT9ja Challenge
           </Typography>
         </MuiAccordionSummary>
@@ -76,12 +84,10 @@ function LandingTable() {
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
       >
-        <AccordionSummary
-          sx={{
-            backgroundColor: "#FCFFFA",
-          }}
+        <MuiAccordionSummary
+          sx={{ backgroundColor: "#FCFFFA" }}
           // aria-controls="panel1d-content"
-          // id="panel1d-header"
+          id="panel1d-header"
         >
           <Typography
             sx={{
@@ -89,6 +95,7 @@ function LandingTable() {
               lineHeight: 4.5,
               flexShrink: 0,
               alignSelf: "center",
+              fontWeight: "bold",
             }}
           >
             Evaluation
@@ -108,7 +115,7 @@ function LandingTable() {
             Challenge: 10% profit target <br />
             Evaluation: 5% profit target
           </Typography>
-        </AccordionSummary>
+        </MuiAccordionSummary>
         <AccordionDetails>
           <Typography>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -123,12 +130,12 @@ function LandingTable() {
         expanded={expanded === "panel2"}
         onChange={handleChange("panel2")}
       >
-        <AccordionSummary
-          sx={{ backgroundColor: "#a3a3a3" }}
+        <MuiAccordionSummary
+          sx={{ backgroundColor: "#ffffff" }}
           aria-controls="panel2d-content"
           id="panel2d-header"
         >
-          <Typography sx={{ width: "33%", flexShrink: 0 }}>
+          <Typography sx={{ width: "33%", flexShrink: 0, fontWeight: "bold" }}>
             Profit Split
           </Typography>
           <Typography
@@ -147,7 +154,7 @@ function LandingTable() {
           >
             Up to 80%
           </Typography>
-        </AccordionSummary>
+        </MuiAccordionSummary>
         <AccordionDetails>
           <Typography>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -162,12 +169,12 @@ function LandingTable() {
         expanded={expanded === "panel3"}
         onChange={handleChange("panel3")}
       >
-        <AccordionSummary
+        <MuiAccordionSummary
           sx={{ backgroundColor: "#FCFFFA" }}
           aria-controls="panel3d-content"
           id="panel3d-header"
         >
-          <Typography sx={{ width: "33%", flexShrink: 0 }}>
+          <Typography sx={{ width: "33%", flexShrink: 0, fontWeight: "bold" }}>
             Talent Bonus
           </Typography>
           <Typography
@@ -189,7 +196,7 @@ function LandingTable() {
           >
             No
           </Typography>
-        </AccordionSummary>
+        </MuiAccordionSummary>
         <AccordionDetails>
           <Typography>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -204,8 +211,8 @@ function LandingTable() {
         expanded={expanded === "panel4"}
         onChange={handleChange("panel4")}
       >
-        <AccordionSummary
-          sx={{ backgroundColor: "#a3a3a3" }}
+        <MuiAccordionSummary
+          sx={{ backgroundColor: "#ffffff" }}
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
@@ -214,6 +221,7 @@ function LandingTable() {
               lineHeight: 3,
               width: "33%",
               flexShrink: 0,
+              fontWeight: "bold",
             }}
           >
             Time limit
@@ -231,7 +239,7 @@ function LandingTable() {
             Challenge: 1 month <br />
             Verification: 2 months
           </Typography>
-        </AccordionSummary>
+        </MuiAccordionSummary>
         <AccordionDetails>
           <Typography>
             Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
@@ -244,12 +252,12 @@ function LandingTable() {
         expanded={expanded === "panel5"}
         onChange={handleChange("panel5")}
       >
-        <AccordionSummary
+        <MuiAccordionSummary
           sx={{ backgroundColor: "#FCFFFA" }}
           aria-controls="panel5bh-content"
           id="panel5bh-header"
         >
-          <Typography sx={{ width: "33%", flexShrink: 0 }}>
+          <Typography sx={{ width: "33%", flexShrink: 0, fontWeight: "bold" }}>
             Free 2nd Chance Account
           </Typography>
           <Typography
@@ -263,7 +271,7 @@ function LandingTable() {
             Yes
           </Typography>
           <Typography sx={{ color: "text.secondary" }}>No</Typography>
-        </AccordionSummary>
+        </MuiAccordionSummary>
         <AccordionDetails>
           <Typography>
             Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
@@ -276,19 +284,21 @@ function LandingTable() {
         expanded={expanded === "panel6"}
         onChange={handleChange("panel6")}
       >
-        <AccordionSummary
-          sx={{ backgroundColor: "#a3a3a3" }}
+        <MuiAccordionSummary
+          sx={{ backgroundColor: "#ffffff" }}
           aria-controls="panel6bh-content"
           id="panel6bh-header"
         >
-          <Typography sx={{ width: "33%", flexShrink: 0 }}>Brokers</Typography>
+          <Typography sx={{ width: "33%", flexShrink: 0, fontWeight: "bold" }}>
+            Brokers
+          </Typography>
           <Typography sx={{ width: "33%", padding: "0px 5px", flexShrink: 0 }}>
             ICMarkets, FXTM,Deriv
           </Typography>
           <Typography sx={{ width: "33%", flexShrink: 0 }}>
             ICMarkets, FXTM
           </Typography>
-        </AccordionSummary>
+        </MuiAccordionSummary>
         <AccordionDetails>
           <Typography>
             Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
@@ -301,12 +311,12 @@ function LandingTable() {
         expanded={expanded === "panel7"}
         onChange={handleChange("panel7")}
       >
-        <AccordionSummary
+        <MuiAccordionSummary
           sx={{ backgroundColor: "#FCFFFA" }}
           aria-controls="panel7bh-content"
           id="panel7bh-header"
         >
-          <Typography sx={{ width: "33%", flexShrink: 0 }}>
+          <Typography sx={{ width: "33%", flexShrink: 0, fontWeight: "bold" }}>
             Payout Frequency
           </Typography>
           <Typography
@@ -324,7 +334,7 @@ function LandingTable() {
           >
             Bi-weekly or Monthly
           </Typography>
-        </AccordionSummary>
+        </MuiAccordionSummary>
         <AccordionDetails>
           <Typography>
             Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
@@ -337,19 +347,19 @@ function LandingTable() {
         expanded={expanded === "panel8"}
         onChange={handleChange("panel8")}
       >
-        <AccordionSummary
-          sx={{ backgroundColor: "#a3a3a3" }}
+        <MuiAccordionSummary
+          sx={{ backgroundColor: "#ffffff" }}
           aria-controls="panel8bh-content"
           id="panel8bh-header"
         >
-          <Typography sx={{ width: "33%", flexShrink: 0 }}>
+          <Typography sx={{ width: "33%", flexShrink: 0, fontWeight: "bold" }}>
             Daily Drawdown
           </Typography>
           <Typography sx={{ width: "33%", padding: "0px 5px", flexShrink: 0 }}>
             5%
           </Typography>
           <Typography sx={{ width: "33%", flexShrink: 0 }}>5%</Typography>
-        </AccordionSummary>
+        </MuiAccordionSummary>
         <AccordionDetails>
           <Typography>
             Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
@@ -362,12 +372,12 @@ function LandingTable() {
         expanded={expanded === "panel9"}
         onChange={handleChange("panel9")}
       >
-        <AccordionSummary
+        <MuiAccordionSummary
           sx={{ backgroundColor: "#FCFFFA" }}
           aria-controls="panel9bh-content"
           id="panel9bh-header"
         >
-          <Typography sx={{ width: "33%", flexShrink: 0 }}>
+          <Typography sx={{ width: "33%", flexShrink: 0, fontWeight: "bold" }}>
             Account Drawdown
           </Typography>
           <Typography
@@ -385,7 +395,7 @@ function LandingTable() {
           >
             10%
           </Typography>
-        </AccordionSummary>
+        </MuiAccordionSummary>
         <AccordionDetails>
           <Typography>
             Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
@@ -398,10 +408,10 @@ function LandingTable() {
         expanded={expanded === "panel10"}
         onChange={handleChange("panel10")}
       >
-        <AccordionSummary
+        <MuiAccordionSummary
           aria-controls="panel10bh-content"
           id="panel10bh-header"
-          sx={{ backgroundColor: "#a3a3a3", display: "flex", gap: "5px" }}
+          sx={{ backgroundColor: "#ffffff", display: "flex", gap: "5px" }}
         >
           <Typography
             sx={{
@@ -409,6 +419,7 @@ function LandingTable() {
               lineHeight: 3,
               flexShrink: 0,
               alignSelf: "center",
+              fontWeight: "bold",
             }}
           >
             Minimum Trading days
@@ -421,7 +432,7 @@ function LandingTable() {
             6days in each phase
             <li>Minimum of 2 days per week</li>
           </Typography>
-        </AccordionSummary>
+        </MuiAccordionSummary>
         <AccordionDetails>
           <Typography>
             Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer
