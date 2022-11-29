@@ -394,6 +394,21 @@ h4 {
   max-width: 545px;
   width: 50%;
 }
+.paystack-button {
+  cursor: pointer;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  background-color: #7ea5e0;
+  font-weight: bold;
+  color: #e0eafc;
+  border: none;
+  border-radius: 5px;
+  width: 30%;
+  height: 45px;
+  margin-top: 40px;
+}
 .BarGraph1 {
   max-width: 350px;
   width: 100%;

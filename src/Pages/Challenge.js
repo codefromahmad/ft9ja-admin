@@ -3,15 +3,29 @@ import { Box, Button, Checkbox, CircularProgress } from "@mui/material";
 import ChallengeCarousel from "../Componets/ChallengeCarousel";
 import { checkboxClasses } from "@mui/material/Checkbox";
 import axios from "../axios";
+import { PaystackButton } from "react-paystack";
 function Challenge() {
   const [size, setSize] = React.useState("");
   const [broker, setBroker] = React.useState("");
   const [payout, setPayout] = React.useState("");
   const [clicked, setClicked] = React.useState(false);
+  const [payshow, setPayshow] = React.useState(false);
   const [show, setShow] = React.useState(true);
   const [loading, setLoading] = React.useState(false);
-
+  const [email, setEmail] = React.useState("");
   const token = localStorage.getItem("access_token");
+
+  const publicKey = "pk_live_45cb4ea56402832c4859a716fafa44439ef2c6a5";
+  console.log(email);
+  const componentProps = {
+    amount: size * 1000,
+    email,
+    publicKey,
+    text: "Pay With Paystack",
+    onSuccess: () => alert("Thanks for doing business with us!"),
+    onClose: () =>
+      alert("Are you sure you don't want to complete your purchase?"),
+  };
   const makeAccount = () => {
     console.log(size, broker, payout);
     setLoading(true);
@@ -25,6 +39,7 @@ function Challenge() {
       .then((res) => {
         console.log(res.data);
         setLoading(false);
+        setPayshow(true);
       });
   };
   React.useEffect(() => {
@@ -33,15 +48,20 @@ function Challenge() {
     } else {
       setShow(true);
     }
+    axios.get("/profile/").then((res) => {
+      setEmail(res.data.user.email);
+    });
   }, [broker, clicked, payout, size]);
 
   return (
     <Box>
       <Box className="Landing">
-      <Box sx={{
-          paddingY:2,
-          paddingLeft:1,
-        }}>
+        <Box
+          sx={{
+            paddingY: 2,
+            paddingLeft: 1,
+          }}
+        >
           {token ? (
             <Button
               className="Btn"
@@ -107,9 +127,9 @@ function Challenge() {
           <Box
             sx={{
               width: "100%",
-              paddingY:{
-                xs:2,
-                lg:5,
+              paddingY: {
+                xs: 2,
+                lg: 5,
               },
               borderTop: "1px solid #E5E5E5",
               borderBottom: "1px solid #E5E5E5",
@@ -250,9 +270,7 @@ function Challenge() {
                     setPayout("Monthly");
                   }}
                   sx={{
-                    fontSize:{
-
-                    },
+                    fontSize: {},
                     background: payout === "Monthly" ? "#359602" : "#3596021a",
                     color: payout === "Monthly" ? "#fff" : "#000",
                   }}
@@ -336,6 +354,10 @@ function Challenge() {
             >
               Proceed to Payment
             </Button>
+            <br />
+            {payshow && (
+              <PaystackButton className="paystack-button" {...componentProps} />
+            )}
           </Box>
         </Box>
       </Box>
