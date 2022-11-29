@@ -14,11 +14,23 @@ function Classic() {
   const [payshow, setPayshow] = React.useState(false);
   const [email, setEmail] = React.useState("");
   const token = localStorage.getItem("access_token");
-
+  let newsize = size * 1;
   const publicKey = "pk_live_45cb4ea56402832c4859a716fafa44439ef2c6a5";
-  console.log(email);
+  console.log(size);
+  if (size === "25000") {
+    console.log("25000 omo");
+    newsize = 180000;
+  } else if (size === "5000") {
+    console.log("5000 omo");
+    newsize = 45000;
+  } else if (size === "3000") {
+    console.log("5000 omo");
+    newsize = 30000;
+  } else {
+    newsize = size;
+  }
   const componentProps = {
-    amount: size * 1000,
+    amount: newsize * 100,
     email,
     publicKey,
     text: "Pay With Paystack",

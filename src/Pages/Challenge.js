@@ -14,11 +14,21 @@ function Challenge() {
   const [loading, setLoading] = React.useState(false);
   const [email, setEmail] = React.useState("");
   const token = localStorage.getItem("access_token");
-
+  let newsize = size * 1;
   const publicKey = "pk_live_45cb4ea56402832c4859a716fafa44439ef2c6a5";
-  console.log(email);
+  console.log(size);
+  if (size === "25000") {
+    newsize = 99000;
+  } else if (size === "5000") {
+    newsize = 29000;
+  } else if (size === "10000") {
+    console.log("10000 omo");
+    newsize = 49000;
+  } else {
+    newsize = size;
+  }
   const componentProps = {
-    amount: size * 1000,
+    amount: newsize * 100,
     email,
     publicKey,
     text: "Pay With Paystack",
@@ -143,7 +153,7 @@ function Challenge() {
                 <Button
                   onClick={() => {
                     console.log("clicked");
-                    setSize("3000");
+                    setSize("5000");
                   }}
                   variant="contained"
                   sx={{
@@ -151,24 +161,24 @@ function Challenge() {
                       xs: 24,
                       md: 30,
                     },
-                    background: size === "3000" ? "#359602" : "#3596021a",
-                    color: size === "3000" ? "#fff" : "#000",
-                  }}
-                >
-                  $3000
-                </Button>
-                <Button
-                  onClick={() => {
-                    console.log("clicked");
-                    setSize("5000");
-                  }}
-                  variant="contained"
-                  sx={{
                     background: size === "5000" ? "#359602" : "#3596021a",
                     color: size === "5000" ? "#fff" : "#000",
                   }}
                 >
                   $5000
+                </Button>
+                <Button
+                  onClick={() => {
+                    console.log("clicked");
+                    setSize("10000");
+                  }}
+                  variant="contained"
+                  sx={{
+                    background: size === "10000" ? "#359602" : "#3596021a",
+                    color: size === "10000" ? "#fff" : "#000",
+                  }}
+                >
+                  $10000
                 </Button>
                 <Button
                   onClick={() => {
