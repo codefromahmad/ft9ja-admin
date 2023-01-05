@@ -448,7 +448,7 @@ h4 {
   flex-direction: row;
   align-items: center;
   margin-top: 10px;
-  max-width: 99%;
+  /* max-width: 99%; */
   justify-content: space-evenly;
 }
 .FeedBarGraph {
@@ -1603,21 +1603,22 @@ h4 {
     font-size: 15px !important;
   }
 
-  .AffiliateFoot {
+  /* .AffiliateFoot {
     flex-wrap: wrap;
     flex-direction: row-reverse;
     align-items: center;
     text-align: center;
     border-radius: 3px;
-    height: 300px !important;
-  }
+    /* height: auto; */
+  /* height: 300px !important; */
+  /* }
   .AffiliateFootp {
     font-size: 16px !important;
-  }
-  .AffiliateFootblank {
-    width: 73% !important;
-    height: 50% !important;
-  }
+  } */
+  /* .AffiliateFootblank {
+    width: 200px !important;
+    height: 200px !important;
+  } */
   .pipcalc__container {
     justify-content: center;
     flex-wrap: wrap;
@@ -1868,7 +1869,7 @@ h4 {
   }
   .BarGraph1 {
     max-width: 100% !important;
-    width: 50%;
+    width: 35%;
   }
   .LineGraph2 {
     max-width: 100% !important;
@@ -1876,7 +1877,7 @@ h4 {
   }
   .FeedBarGraph {
     max-width: 100% !important;
-    width: 50%;
+    width: 35%;
   }
   .LineGraph3 {
     max-width: 100% !important;
@@ -1903,5 +1904,16 @@ h4 {
   }
   .landp {
     height: 100%;
+  }
+}
+
+@media only screen and (max-width: 3840px){
+  .FeedBarGraph {
+    max-width: 100% !important;
+    width: 368px;
+  }
+  .BarGraph1{
+    max-width: 100% !important;
+    width: 368px;
   }
 }

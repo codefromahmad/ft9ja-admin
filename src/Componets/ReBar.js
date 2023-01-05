@@ -69,7 +69,7 @@ function ReBar() {
   };
 
   return (
-    <ResponsiveContainer width="90%" height={224}>
+    <ResponsiveContainer width="80%" height={224}>
       <BarChart
         data={info}
         margin={{ bottom: 25 }}
