@@ -1478,6 +1478,7 @@ h4 {
   .FeedGraphs {
     flex-wrap: wrap;
     flex-direction: column;
+    width: 300px;
   }
   .FeedBarGraph {
     width: 100%;
@@ -1907,12 +1908,12 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 3840px){
+@media only screen and (max-width: 3840px) {
   .FeedBarGraph {
     max-width: 100% !important;
     width: 368px;
   }
-  .BarGraph1{
+  .BarGraph1 {
     max-width: 100% !important;
     width: 368px;
   }
