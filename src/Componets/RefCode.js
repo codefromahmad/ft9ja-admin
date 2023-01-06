@@ -86,10 +86,11 @@ function RefCode() {
             display: "flex",
             flexDirection: "column",
             marginLeft: "15%",
+            alignItems: "center",
           }}
           className="PayoutBoxlinksection"
         >
-          <ResponsiveContainer className={"affbar"} width="50%" height={124}>
+          <ResponsiveContainer className={"affbar"} width={200} height={124}>
             <BarChart
               data={[gdata]}
               margin={{ bottom: 15, top: 15 }}

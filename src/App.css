@@ -1344,6 +1344,9 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
+  .affbar {
+    width: 70% !important;
+  }
   .GetAccbtn {
     padding: 5px 8px !important;
     width: 145px !important;
@@ -1514,6 +1517,7 @@ h4 {
   }
   .PayoutBoxlinksection {
     margin-left: 0% !important;
+    align-items: center;
   }
   .CompoundingHeader {
     margin-bottom: 10%;
@@ -1557,7 +1561,7 @@ h4 {
     flex-wrap: wrap;
   }
   .affbar {
-    width: 100% !important;
+    width: 175px !important;
   }
   .css-99l4xy-MuiSvgIcon-root {
     font-size: 1.5rem !important;
@@ -1805,7 +1809,7 @@ h4 {
     width: calc(0.9vw + 5.4vh + 22.5vmin) !important;
   }
   .affbar {
-    width: 80% !important;
+    width: 200px !important;
   }
   .pipcalctexts h2 {
     font-size: calc(1vw + 1vh + 2vmin);
@@ -1860,6 +1864,16 @@ h4 {
   }
 }
 
+@media only screen and (min-width: 901) and (max-width: 1440px) {
+  .PayoutBoxlinksection {
+    align-items: center;
+    width: 170px !important;
+  }
+  .affbar {
+    width: 70% !important;
+  }
+}
+
 @media only screen and (min-width: 1441px) {
   .Tab1 {
     max-width: 100% !important;
@@ -1869,7 +1883,7 @@ h4 {
     justify-content: space-between;
   }
   .BarGraph1 {
-    max-width: 100% !important;
+    /* max-width: 100% !important; */
     width: 35%;
   }
   .LineGraph2 {
@@ -1877,7 +1891,7 @@ h4 {
     width: 50%;
   }
   .FeedBarGraph {
-    max-width: 100% !important;
+    /* max-width: 100% !important; */
     width: 35%;
   }
   .LineGraph3 {
@@ -1908,7 +1922,7 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 3840px) {
+@media only screen and (min-width: 1440px) and (max-width: 3840px) {
   .FeedBarGraph {
     max-width: 100% !important;
     width: 368px;
@@ -1916,5 +1930,8 @@ h4 {
   .BarGraph1 {
     max-width: 100% !important;
     width: 368px;
+  }
+  .affbar {
+    width: 200px !important;
   }
 }
