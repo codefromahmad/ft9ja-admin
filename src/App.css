@@ -1218,9 +1218,10 @@ h4 {
   padding-bottom: 5px;
 }
 
-.Landingheader a {
-  font-size: 18px;
-}
+/* .Landingheader a {
+  font-size: 18px !important;
+  width: 155px !important;
+} */
 .landp {
   width: 60%;
   height: 59px;
@@ -1319,11 +1320,10 @@ h4 {
   cursor: pointer;
   background: #359602 !important;
   border-radius: 5px;
-  margin: 0px 25px !important;
   text-transform: capitalize !important;
-  width: 90% !important;
+  width: 155px !important;
   height: 52px;
-  font-size: 16px !important;
+  font-size: 18px !important;
 }
 
 .agreement {
@@ -1344,6 +1344,10 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
+  .Landingheader a {
+    font-size: 16px !important;
+    width: 90px !important;
+  }
   .affbar {
     width: 70% !important;
   }
@@ -1690,6 +1694,11 @@ h4 {
     margin-left: auto;
     margin-right: auto;
   }
+  .Landingheader a {
+    font-size: 16px !important;
+    width: 120px !important;
+    height: 50px !important;
+  }
   .Tab1 {
     padding: 8px 20px;
   }
@@ -1869,12 +1878,21 @@ h4 {
     align-items: center;
     width: 170px !important;
   }
+  .accordion__btn {
+    font-size: 18px !important;
+    width: 155px !important;
+  }
   .affbar {
     width: 70% !important;
   }
 }
 
 @media only screen and (min-width: 1441px) {
+  .accordion__btn {
+    font-size: 18px !important;
+    width: 155px !important;
+    height: 50px !important;
+  }
   .Tab1 {
     max-width: 100% !important;
   }
@@ -1902,11 +1920,6 @@ h4 {
     font-size: 16px;
     padding: 10px 0px;
     line-height: normal;
-  }
-  .accordion__btn {
-    width: calc(3.9vw + 5.9vh + 14.9vmin);
-    height: 77px;
-    font-size: calc(0.8em + 0.22vw) !important;
   }
   .classicbtns button {
     height: 77px;
